@@ -24,43 +24,53 @@
         <div class="parallax">
             <div id="text-wrapper">
                 <h1 class="headline">Worth a Thousand Words</h1><br><br>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec faucibus leo. Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. Cras rhoncus malesuada leo, et rutrum ipsum accumsan nec. Sed faucibus mollis porta. Interdum et malesuada 
-                fames ac ante ipsum primis in faucibus. Nam tincidunt cursus est, vel gravida elit suscipit vel. Donec non tempor leo, vitae gravida ligula. 
-                Mauris laoreet pretium urna nec porttitor. Sed dignissim lorem ac nisl ultrices, a tristique metus varius. Nulla pellentesque ornare arcu, eu 
-                laoreet odio euismod nec. Ut at sodales sem, ac facilisis sem. Donec scelerisque accumsan est, in viverra metus blandit in.</p>
+                <p class="description">In the 19th century, recently-freed African Americans used photography as a tool for racial justice to fight against racist misrepresentations and to 
+                take control of their self-representation. How did African American men and women use their newfound creative freedom to redefine their identity?
+                <br><br>Through the Smithsonian's Open Access initiative, this data visualization allows you to explore a word analysis of the titles of the photography 
+                collection at the National Museum of African American History & Culture.</p>
             </div>
-            <img src="images/cat2.png" class="object" data-value="2" alt="">
-            <img src="images/couple2.png" class="object" data-value="6" alt="">
-            <img src="images/derby2.png" class="object" data-value="4" alt="">
-            <img src="images/dress2.png" class="object" data-value="-6" alt="">
-            <img src="images/frederick2.png" class="object" data-value="8" alt="">
-            <img src="images/glee2.png" class="object" data-value="-4" alt="">
-            <img src="images/harriet2.png" class="object" data-value="5" alt="">
-            <img src="images/linking2.png" class="object" data-value="-9" alt="">
-            <img src="images/mustache2.png" class="object" data-value="-5" alt="">
+            <img src="images/header/cat2.png" class="object" data-value="2" alt="">
+            <img src="images/header/couple2.png" class="object" data-value="6" alt="">
+            <img src="images/header/derby2.png" class="object" data-value="4" alt="">
+            <img src="images/header/dress2.png" class="object" data-value="-6" alt="">
+            <img src="images/header/frederick2.png" class="object" data-value="8" alt="">
+            <img src="images/header/glee2.png" class="object" data-value="-4" alt="">
+            <img src="images/header/harriet2.png" class="object" data-value="5" alt="">
+            <img src="images/header/linking2.png" class="object" data-value="-9" alt="">
+            <img src="images/header/mustache2.png" class="object" data-value="-5" alt="">
         </div>
     </div>
-    <div id="vis" class="container">
-        <script src="Jquery.min.js"></script>
-        <script src="script.js"></script>
-        <select id="typeSelect" onchange="switchType()">
-            <option value="Photograph">Photograph</option>
-            <option value="Photographic">Photographic</option>
-            <option value="Carte-de-visite">Carte-de-visite</option>
-            <option value="Tintype">Tintype</option>
-            <option value="Cabinet">Cabinet card</option>
-            <option value="Albumen">Albumen</option>
-            <option value="Ambrotype">Ambrotype</option>
-            <option value="Print">Print</option>
-            <option value="Daguerreotype">Daguerreotype</option>
-            <option value="Stereograph">Stereograph</option>
-            <option value="Framed">Framed</option>
-            <option value="Postcard">Postcard</option>
+    <div class="container">
+
+        <select id="typeSelect">
+            <option value="photograph">Photograph</option>
+            <!-- <option value="photographic">Photographic</option>
+            <option value="carte-de-visite">Carte-de-visite</option>
+            <option value="tintype">Tintype</option>
+            <option value="cabinet">Cabinet card</option>
+            <option value="albumen">Albumen</option> -->
+            <option value="ambrotype">Ambrotype</option>
+            <option value="print">Print</option>
+            <option value="daguerreotype">Daguerreotype</option>
+            <option value="stereograph">Stereograph</option>
+            <option value="framed">Framed</option>
+            <option value="postcard">Postcard</option>
+            <option value="film">Film still</option>
+            <option value="panoramic">Panoramic</option>
+            <option value="portrait">Portrait</option>
+            <option value="scrapbook">Scrapbook</option>
         </select>
-        <!-- <button onclick="drillUpALevel()">Drill back</button> -->
+        
+        <div id="vis">
+            <script src="Jquery.min.js"></script>
+            <script src="script.js"></script>
+        </div>
     </div>
     
+    <div id="imageCard" class="image-card">
+        <a href="" target="_blank"><img src="" alt="image"></a>
+        <a href="" target="_blank">View more</a>
+    </div>
 
 </body>
 </html>

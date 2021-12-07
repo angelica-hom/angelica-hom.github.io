@@ -36,7 +36,7 @@ body {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-80%);
+    transform: translateY(-60%);
 }
 
 .parallax {
@@ -81,18 +81,14 @@ h1 {
     margin-bottom: -5px;
 }
 
+p {
+    font-size: 25px;
+}
+
 select {
     font-family: 'EB Garamond', serif;
-    font-size: 50px;
-    color: #fff;
-    background-color: #0E151C;
-    border-color: #0E151C;
-    margin-left: 5px;
-    text-align: right;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(1347%);
+    font-size: 15px;
+    transform: translateX(900%);
 }
 
 svg {
@@ -100,14 +96,10 @@ svg {
     height: 100vh;
 }
 
-button {
-    transform: translateY(-2400%);
-    margin-left: 3.5%;
-}
-
 #vis {
-    height: 100vh;
+    height: 97vh;
     background-color: #0E151C;
+    padding-top: 20px
 }
 
 path {
@@ -118,7 +110,37 @@ text {
     fill: #FFF;
 }
 
-tspan:hover, select:hover {
+tspan:hover {
     cursor: pointer;
     font-style: italic;
+}
+
+.image-card {
+    width: 500px;
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-card a {
+    text-align: center;
+    display: block;
+    font-family: 'EB Garamond', serif;
+    color: #eee;
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.image-card a:hover {
+    color:rgb(8, 221, 122);
 }

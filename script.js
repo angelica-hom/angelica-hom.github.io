@@ -1,237 +1,1192 @@
-//anychart.data.loadJsonFile("data/Photograph.json", function (data) {
+const sentenceData=[
+  {sentence:'Photograph a man with a mustache wearing a suit',
+  imageUrl:'./images/Capture.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.54?destination=edan-search/collection_search%3Fedan_q%3Dmustache%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph for The Emperor Jones',
+  imageUrl:'./images/Capture2.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.118.165.1?destination=edan-search/collection_search%3Fedan_q%3Demperor%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
 
-//var data = [["Tintype of a young woman with a white baby"], ["Carte-de-visite of women and children in a cotton field"], ["Booker T. Washington"], ["Peter L. Robinson, Sr."], ["Tintype of a man"], ["Tintype of a man"], ["Waiting for the Hour"], ["A Rice Raft, South Carolina"], ["Untitled"], ["Photograph of Maggie Hickman in a cap and gown"], ["Lantern slide of the slave pen of Price, Birch & Co. in Alexandria, Virginia"], ["No. 180, Turpentine Still"], ["Print of Cab Calloway dancing at the Hotel Nacional de Cuba"], ["Albumen print of Millie and Christine McCoy"], ["Albumen print of an unidentified woman"], ["Photographic postcard of a woman"], ["Photographic postcard of three unidentified men"], ["Rehabilitation client and his family on Lady's Island off Beaufort, SC"], ["Matted tintype of Bachus"], ["Tintype of a woman carrying a medical bag"], ["Cabinet card of an unidentified woman photographed by J. P. Ball & Son"], ["Postcard of men, women, and children outside of a dwelling"], ["Photograph of a man with a beard"], ["Photograph of a toddler standing on a wicker chair"], ["Photograph of a man in a suit, vest and necktie"], ["Photographic print of a man and woman posing"], ["Photographic print of two women sitting inside a house"], ["Photographic print of 3 men and woman posing in indoor setting"], ["918. Collecting Remains of the Dead"], ["Truck Train unloading 366 Inf. Bruyers, Vosges, France. Aug 12, 1918"], ["325 Field Signal Bn. 92nd Div- Stringing Lines. Binarville (Argonne) Oct 1, 1918."], ["Gelatin silver print of Lil Green, Queen of The Blues"], ["Gelatin silver print of Curly Drum Boogie"], ["Photograph of a man wearing a suit, vest and necktie"], ["Scrapbook fragment with five pictures adhered to it"], ["Carte-de-visite portrait of Mary Shriner"], ["Carte-de-visite portrait of Isabel and Herbert Howland"], ["Photographic postcard of WWI soldier"], ["Carte-de-visite portrait of Sojourner Truth"], ["Tintype of an woman wearing a hat"], ["W.E.B. Du Bois"], ["The Clique, Fisk University Campus"], ["Daguerreotype of a man taken by Augustus Washington"], ["Carte-de-visite of the Jubilee Singers"], ["(30) 19118 Uncle Sam Provides for Comfort of His Soldiers. Colored Troops En Route to France Taking Train Rest at Railway Division Point"], ["Photograph of Lucille Brown among Poro agents and one small child"], ["Photograph of Lucille Brown and Elder Brown among others"], ["Photograph of a man and woman in front of car"], ["Photographic print of an unidentified child"], ["Photographic postcard of unidentified child"], ["Photographic postcard of a man in a double-breasted jacket"], ["Photographic postcard of a man in a suit"], ["Photograph of a woman"], ["Photographic postcard portrait of a cowboy"], ["Scenery on Rio de Los Reyes, or Kings River, Sierra Nevada Mountains"], ["Photograph of Tom Durr standing next to a chair with a hat on it"], ["Photographic postcard of Rev. Nelson W. Jordan"], ["Photographic print of the Senate of North Carolina, Session of 1889"], ["Photograph of a hunting party"], ["Gelatin silver print of Jimmie Lunceford and his Orchestra"], ["Plantation Scene; Folks All Home"], ["Cyanotype of a porter from the Hotel Palomares"], ["Photograph of a woman in a black dress holding a guitar"], ["Photograph of a woman wearing a white dress"], ["In the French Foreign Legion"], ["Carte-de-visite portrait of Susie Bruce"], ["Carte-de-visite portrait of Samuel Ely"], ["Carte-de-visite portrait of S. J. Bowen"], ["Carte-de-visite of Marquis Peterson"], ["Photographic postcard of WWI soldier with quartermaster PFC patch"], ["Framed panoramic photograph of M Company, 365th Infantry, 183d Brigade"], ["Cabinet card of Buffalo soldier wearing buffalo coat"], ["Carte-de-visite of a couple"], ["Cabinet card of Sarah Ann Blunt Crozely"], ["Girls of the Booker Washington School, Tuskegee, Ala. -- Mrs. McKinley in near carriage."], ["Booker T. Washington, President of the Negro Industrial School, Tuskegee, Alabama"], ["Scene from Tulsa Race Riot June 1st 1921"], ["Photographic print of the Greenwood district in Tulsa, Oklahoma"], ["Photographic postcard of Magdalene Hendricks and sister in Eastern Star regalia"], ["Albumen print of mebers of the Grand United Order of Odd Fellows"], ["Cabinet card of Sojourner Truth"], ["Photographic print of Cab Calloway and his band in a sleeper car"], ["Photographic postcard of an infant"], ["Photographic postcard featuring headshot of a man"], ["Photographic postcard of a woman"], ["Photograph of Aaron Molyneaux Hewlett, gymnasium coach of Harvard University"], ["Tintype depicting woman in white shawl"], ["Tintype of a woman and four children"], ["Tintype of young woman in striped dress"], ["Photograph of a woman standing on the porch of a house"], ["Photograph of Larby Smith standing next to a wicker chair."], ["Photograph of a man wearing a dark colored suit with a pocket watch in his vest"], ["Photographic print of a woman with a large bow at her neck"], ["Beatrice Coleman and Beatrice Dedman"], ["Photograph of the John H. Scott family home"], ["Stereograph of deceased soldiers on the battlefield after Gettysburg"], ["Stereograph of deceased Confederate soldiers near a fence at Antietam, Maryland"], ["Pages 26 - 32 of album belonging to Lewis C. Smith"], ["Photograph of two men linking arms"], ["Photograph album presented to Beatrice Williams"], ["Albumen print of a man with a full hay cart"], ["Tintype of a highly decorated Buffalo soldier"], ["Carte-de-visite portrait of Lydia Maria Child"], ["Carte-de-visite portrait of Carrie Lining"], ["Carte-de-visite portrait of Agnes and Slocum Howland"], ["Carte-de-visite portrait of Sally Cadwallader Ely"], ["Tintype in carte-de-vsite of an unidentified woman"], ["Tintype of a man"], ["Photograph of Cpl. Lawrence Leslie McVey with his son, Lawrence McVey Jr."], ["Untitled"], ["Untitled"], ["Ambrotype of an unidentified woman and child"], ["Photographic postcard of Daniel Hendricks in Masonic regalia"], ["Photographic postcard of Charles Wilbur Rogan with his unit in the Philippines"], ["Photograph of Sammy Davis Jr."], ["Print of Cab Calloway dancing at the Hotel Nacional de Cuba"], ["Photographic postcard of two unidentified women"], ["Photographic print of a young girl"], ["Photographic postcard of a woman"], ["Till boy's funeral, Burr Oaks Cemetary [sic]"], ["Photographic postcard portrait of two men in Western attire"], ["Tintype portrait of a man wearing a hat and suit"], ["Photograph of Mattie Jones"], ["Photograph of a girl wearing a pleated dress"], ["Photograph of a woman sitting with her legs crossed"], ["Photograph of a man and woman in formal clothes"], ["Photograph of integrated American Expeditionary Forces in France"], ["Photographic print of 8 people in front of a building"], ["Photograph of B.C. Franklin, I.H. Spears, and Effie Thompson"], ["Stereograph of a deceased Confederate soldier in a trench"], ["Class of 1892 Oberlin Academy Preparatory School"], ["366 Inf. 92nd Div. Ainville, Vosges, France - Aug 11. 1918"], ["An Hour's Hunting"], ["Photograph of a woman wearing a white dress"], ["Photograph of a woman wearing a dark colored dress"], ["Photograph of a woman wearing a dark colored dress"], ["Carte-de-visite portrait of Eugene Dowe"], ["Carte-de-visite portrait of Tom Thumb and Lavinia Warren"], ["Carte-de-visite portrait of Frederick Douglass"], ["Carte-de-visite of a Freedmen's School with students and teachers"], ["Albumen print of a man with moustache"], ["Ambrotype of a young woman holding two white children"], ["Ambrotype of Frederick Douglass"], ["Tintype of a woman"], ["Photograph of Bosey E. Vick"], ["Photograph of Cpl. Lawrence Leslie McVey"], ["Photograph of Cpl. Lawrence McVey in uniform wearing the Croix de Guerre medal"], ["Gordon Under Medical Inspection"], ["Cabinet card of a woman"], ["Untitled"], ["Untitled"], ["Untitled"], ["Jubilee Singers, Fisk University, Nashville, Tennessee"], ["Albumen print of African American Odd Fellows in front of a grandstand"], ["Wedding portrait of Lollaretta Pemberton"], ["Photographic print of an unidentified man"], ["Photograph of Mary Lou Williams playing piano with Andy Kirk and his orchestra"], ["Tintype of a man"], ["Oh! Reign Massa Jesus Reign"], ["Untitled"], ["Daguerreotype of Rhoda Phillips"], ["Tintype of a Civil War soldier"], ["Carte-de-visite of Sojourner Truth"], ["Print of Cab Calloway and dancers performing"], ["Photographic postcard of a baby in a stroller"], ["Photographic postcard of a woman standing next to a wooden chair"], ["Photographic print of a woman sitting and a man standing"], ["Photographic print of a woman and child"], ["Photographic print of an unidentified boy"], ["Photograph of members of the 55th Massachusetts Infantry"], ["Photograph of a man"], ["Postcard of two men posing in a Western scene in a photography studio"], ["Photographic postcard portrait of Margarette Davenport in costume"], ["Photograph of men herding cattle in a field"], ["Photograph of men, women, and children in a yard"], ["California Rodeo, Salinas, 1919"], ["Photograph of a baby sitting in a chair"], ["Photographic print of a woman"], ["Photograph of Senator Henry Hall Falkener and family"], ["Bob and His Fiddle"], ["Photograph portrait of a woman in a black dress"], ["Marriage certificate with tintypes of Augustus L. Johnson and Malinda Murphy"], ["Framed photograph of unidentified WWI soldier"], ["Carte-de-visite portrait of Phebe M. Coffin"], ["Tintype portrait of Mrs. Annie Cox"], ["Carte-de-visite portrait of Wendell Phillips"], ["Photographic postcard of three WWI soldiers"], ["Tintype of two seated men in wooden and velvet case"], ["Carte-de-visite of a boy named Sandy of Company A, 15th Pennsylvania Cavalry"], ["CDV of John Hines, formerly enslaved and cook of Company K, 15th Penn. Cavalry"], ["CDV of Thomas Henderson servant of Lt. Col. C.B. Lamborn of 15 Penn. Cavalry"], ["Portrait of a woman in graduation attire"], ["Photograph of Amos Harper off to school"], ["Photographic portrait of a man and woman on floral paper backing"], ["Photograph of a man with a mustache wearing a dark jacket"], ["Photograph of Marion Durr wearing a shirt and vest"], ["Photograph of a baby dressed in white and sitting in a chair"], ["Photographic print postcard of a baby on a blanket"], ["Photographic print of funeral floral arrangements for Samuel M. Jackson Jr."], ["Photographic print of 4 women sitting in front of a sofa"], ["Page 20 of album belonging to Lewis C. Smith"], ["368 Inf, 92nd Div advancing on camouflaged road - Binarville (Argonne) Oct. 1, 1918"], ["Q.M. Hdqrs. 92nd Div. - Bourbaine les Bain, Mte. Marne, France Aug 11, 1918"], ["Gelatin silver print of Paul Monday playing the piano"], ["Carte-de-visite portrait of Carrie N. Lacy"], ["Carte-de-visite portrait of Georgy Willets"], ["Carte-de-visite portrait of Charles Dickens"], ["Carte-de-visite portrait of Col. Elmer Ephraim Ellsworth"], ["Market Scene"], ["Albumen Print of the congregation of St. Nicholas Church in Maryland"], ["The Grand Jury."], ["Cabinet card of an unidentified girl"], ["Photographic postcard of Jack Johnson's corner of the ring"], ["Tintype of a man"], ["Cabinet card of Sarah Ann Blunt Crozely"], ["Portrait of John Brown"], ["A stereograph of Howard University in the late 19th century"], ["Troop A, Ninth U.S. Cavalry -- Famous Indian Fighters"], ["V19244--Colored Veterans of the 15th Regt. 369th Infantry, Marching up Fifth Avenue, New York City"], ["Colored Soldiers who covered themselves with glory in France, returning to US"], ["Untitled"], ["Untitled"], ["Tintype photograph of a man identified as James Turner, with two women"], ["Photograph of Jim Europe's 369th Infantry Harlem Hellfighters Brass Band"], ["Photograph of the Cotten family"], ["Photographic print of the Greenwood district in Tulsa, Oklahoma"], ["Gordon under Medical Inspection"], ["No. 166, Tidy Cart"], ["Print of Cab Calloway looking out a window"], ["Photographic print of two unidentified men outdoors"], ["Photographic postcard of two women unidentified women"], ["Photographic print of a dog"], ["Photographic postcard of four unidentified men"], ["Photograph of an unidentified man holding a saber"], ["Ambrotype of an unidentified young woman"], ["Tintype of James Washington"], ["Photograph of E. G. Humphrey wearing a suit"], ["Photographic print of Westley Williams"], ["Cabinet card of an unidentified member of the Vass family"], ["Cabinet card of John H. Scott"], ["Stereograph of a deceased soldier on the battlefield after Gettysburg"], ["Gelatin silver print of a line of guests arriving behind a velvet rope"], ["Radical Members of the South Carolina Legislature"], ["Photograph of a man wearing a suit, derby hat and holding a suitcase"], ["Carte-de-visite portrait of Miss Thiele"], ["Carte-de-visite portrait of Miss Julia J. Thomas"], ["Carte-de-visite portrait of Anna M. Stanton"], ["Carte-de-visite portrait of Mrs. Bowen"], ["Photographic postcard of WWI soldier"], ["Photographic postcard of WWI soldier with French and American flags"], ["Carte-de-visite portrait of Margaret Alsop"], ["Ambrotype of a woman seated with a hat in her lap"], ["Tintype of a young woman with a white child"], ["Photographic postcard of Jack Johnson and James J. Jeffries clinching"], ["Cabinet card of Sarah Ann Blunt Crozely"], ["Photograph portrait of Samuel Grant"], ["Untitled"], ["Untitled"], ["Photograph of a girl reading"], ["Albumen print of three members of the Boyd family"], ["Albumen print of four men indoors"], ["Photographic postcard of Charles Wilbur Rogan with his unit in the Philippines"], ["Film still for The Emperor Jones"], ["Pinback button featuring a campaign portrait of Senator William B. Nash"], ["Photographic print of unidentified woman"], ["Photographic postcard of an infant in a wooden chair"], ["Photographic postcard featuring an oval portrait of a young child"], ["Photograph album page with three photographs"], ["Photograph of people standing in a line on a street in Tulsa, Oklahoma"], ["Ambrotype of Ann Hurst Copeland in an embossed leather case"], ["Albumen print of enslaved women and their children near Alexandria, Virginia"], ["Photograph of Lucius Harper, Jr. off to school"], ["Photograph portrait of a man dressed as a cowboy"], ["Postcard of a man posing in a Western scene in a photography studio"], ["Photograph of a staged sword duel"], ["Photograph of a man wearing a light colored jacket, vest and necktie"], ["Photograph of a baby wearing dark colored clothing sitting in a chair"], ["Photograph of a couple standing behind a chair"], ["Photograph of Malenda Polk wearing a white, high collar dress."], ["Photograph postcard of the Jenkins Orphanage Band, Charleston, South Carolina"], ["3d Bn. 366 Inf. - 92nd Div. at Gas Mask drill - Ainvelle, Vosges, France - Aug 8, 1918"], ["Photograph of World War I soldiers"], ["Photograph of unidentified woman wearing French Antillean dress"], ["Photograph of a woman holding a closed parasol"], ["Photograph of a woman sitting in a wicker chair"], ["Photograph of Ollie Hadley"], ["Carte-de-visite portrait of Willy Hall"], ["Tintype portrait of Miss Allen"], ["Carte-de-visite portrait of Miss Laura W. Stebbins"], ["Albumen portrait of Fanny Seward mounted on paper"], ["Framed panoramic photograph of Camp Grant officers"], ["Daguerreotype of a man in paisley vest"], ["Photographic postcard of James J. Jeffries staggering away from Jack Johnson"], ["Tintype of a woman"], ["Photographic print of Ethel Waters as Carmen"], ["Collage of photographs of the Alpha Phi Alpha Sphinx Club fraternity"], ["Photograph of Theo Lane"], ["Untitled"], ["Photograph of Lena Horne in profile"], ["George Washington Carver, Tuskegee, Alabama"], ["Girl at Gee's Bend, Alabama"], ["Photographic postcard of Charles Wilbur Rogan with his unit in the Philippines"], ["Photographic postcard of Pullman Porter, Omer Ester and his wife Jean"], ["Film still for Cabin in the Sky"], ["Photograph for The Emperor Jones"], ["Print of Cab Calloway with his band and dancers onstage at the Cotton Club"], ["Photograph of Billie Holiday"], ["Tintype of a unidentified young girl in a mailing card"], ["Photographic postcard of unidentified child"], ["Photographic postcard of a woman"], ["Photographic postcard of three unidentified women"], ["Photograph of North Greenwood Avenue in Tulsa, Oklahoma"], ["Tintype of a seated young woman"], ["Tintype of a girl in a plaid dress"], ["Hoeing Rice, South Carolina, U.S.A."], ["Photograph of a man"], ["Photographic print of a toddler girl sitting and smiling at the camera"], ["Photograph album of 25th Regiment USCT soldiers owned by William A. Prickitt"], ["Photograph of Dr. William H. Conner and family outside their home"], ["Page 24 of album belonging to Lewis C. Smith"], ["Mess 317 Supply Train - Belleville Meuse, Oct 12, 1918"], ["Big Nims - 366 Inf. Ainvelle, Vosges, France, Aug 8, 1918"], ["Ambrotype of Elisa Greenwell with handwritten note"], ["Folks At Home"], ["No. 2009, Taking a Rest"], ["Photograph a man with a mustache wearing a suit"], ["Photograph of a woman wearing a dark colored dress"], ["Carte-de-visite portrait of Charles Sumner"], ["Photographic postcard of WWI soldier"], ["Cabinet card of Mary Jane Hale Welles in a funeral dress by Elizabeth Keckley"], ["Cabinet card portrait of John R. Bell"], ["Cabinet card of Frederick Douglass with his grandson, Joseph Douglass"], ["Scrapbook page about the Wiley College Debate Team"], ["German Alergians captured by 92nd Div - St Die, Vosges Sept 14, 1918"], ["Blacksmith Shop, 366 Inf., Sergueux, Hte. Marne, France. Aug 11, 1918."], ["Photograph of Tobe Brown"], ["Stereograph of people picking cotton in a field"], ["Photograph of a man in a dark colored jacket"], ["Photograph of a woman in a white dress standing next to a chair"], ["Hand-colored albumen portrait of Princess Dagmar"], ["Carte-de-visite portrait of Nancy M. Johnson"], ["Carte-de-visite portrait of Harriet Tubman"], ["Cabinet card of a Buffalo soldier from Co. G 25th Regiment"], ["WAR VIEWS-ARMY OF THE POTOMAC No. 2056 CAMP DINNER."], ["No. 2594: Contrabands made happy by employment as army teamsters. This shows a glimpse of their first free home; being their winter quarters near City Point, Va."], ["Carte-de-visite of a young woman and two children"], ["Cabinet card of Rev. G.H.S. Bell"], ["Tintype of a man"], ["Tintype of a woman"], ["Tintype of a woman"], ["Republican Notification Committee, Washington, D.C., Monday, June 20th, 1892"], ["Photographic postcard of Cpl. Lawrence Leslie McVey in uniform"], ["Photograph of Cpl. Lawrence Leslie McVey on the beach"], ["Tintype of four men smoking cigars"], ["Untitled"], ["Untitled"], ["Untitled"], ["Carte-de-visite of a woman with a young boy"], ["Photographic postcard of Pullman Porter, T.R. Joseph"], ["Print of Cab Calloway and his band performing on stage"], ["Photographic print of a young boy"], ["Photographic postcard of a woman standing next to a wooden chair"], ["Photograph of men running with a football in front of two houses"], ["Carte-de-visite album of the 54th Massachusetts Infantry Regiment"], ["Photograph of World War II soldiers from Company D, 8th Battalion, Ft. Belvoir"], ["Postcard of men branding a cow"], ["Photographic postcard of a man with a pipe, riding a mule"], ["Photographic print of men and women in front of Vernon AME Church, Tulsa"], ["552. Dunker Church, Antietam, September 17, 1862"], ["Photograph of theatre production with blackface actors and Oliver Howard Horner"], ["367th Inf 92nd Div. On way to Marbache Mthe et Moscelle, Oct. 12, 1918"], ["No. 19, Cotton Picking"], ["No. 1036, Cabin in the Corn"], ["Photograph of a woman in a white dress"], ["Albumen portrait of Charlotte S. Poulton mounted on paper"], ["Carte-de-visite portrait of Mrs. Maj. Hall"], ["Tintype portrait of USCT soldier William Johnson"], ["Carte-de-visite portrait of Emma V. Brown"], ["Carte-de-visite portrait of Sidney Taliaferro"], ["Carte-de-visite portrait of Walter W. Johnson"], ["Photographic portrait of Lt. Charles J. Blackwood"], ["The Slave Market, Atlanta, Ga."], ["Cased tintype of an unidentified Union soldier"], ["Photographic postcard of unidentified woman holding a travel bag"], ["Ambrotype of a man"], ["Tintype of two men seated with legs and arms crossed"], ["Tintype of a woman seated"], ["Cabinet card of Susan Bell"], ["Photographic postcard of Harriet Tubman's great nieces, Eva and Alida Stewart"], ["Photographic postcard with photos of Jack Johnson and James J. Jeffries"], ["Daguerreotype of a boy holding a white baby"], ["Photographic postcard of Cpl. Lawrence Leslie McVey in uniform"], ["Photographic portrait of a soldier inside decorative military frame"], ["Photograph of Regina Egertion Wright with Colored Training School diploma"], ["Untitled"], ["Gladys Bentley: America's Greatest Sepia Player -- The Brown Bomber of Sophisticated Songs"], ["Photographic postcard of a military marching band"], ["Photographic print of an unidentified woman"], ["Photographic postcard of a seated man holding a bowler hat"], ["Photographic print of Joseph Phillipps"], ["Tintype of men sitting on a car"], ["Photographic print of two women"], ["Photographic postcard of an unidentified man in a suit"], ["Photograph album page with three photographs of women in Tulsa, Oklahoma"], ["Tintype of man in suit, tie, and hat"], ["Postcard of soldiers inspecting horses"], ["Photographic postcard portrait of a man wearing a hat and overalls"], ["Photographic portrait of a man wearing hat and gun holster"], ["Tintype portrait of a man wearing a fur hat"], ["Photograph of a man with a beard wearing a dark colored suit and vest"], ["Photographic print of a man in suit sitting on a chair with right leg crossed"], ["Photographic print of a woman on a stylized background of a scroll and snowscape"], ["Photographic print of Mr. and Mrs. Jackson and another woman in front of car"], ["Carte-de-visite of Thomas Wiggins, also known as Blind Tom"], ["Photograph of schoolchildren and teachers"], ["Photograph of B.C. Franklin and unidentified men in Ardmore, Oklahoma"], ["Stereograph of two deceased Confederate soldiers in a trench"], ["Carte de visite of Sgt. Jacob Johns (19th USCT)"], ["Watching Hun Planes - 317th Supply Train - Belleville, Oct 1918"], ["Gelatin silver print of of five men in suit jackets and bow ties"], ["Cooking His Breakfast; Augusta, Ga"], ["Photograph of a woman wearing a dark colored dress and glasses"], ["Carte-de-visite portrait of Abby and Julia Smith"], ["Carte-de-visite portrait of Mary Anna Longstreth"], ["Tintype portrait of Col. C. W. Folsom"], ["Carte-de-visite portrait of John W. Menard"], ["Carte-de-visite portrait of Mary Ann Donaldson"], ["Carte-de-visite portrait of Harold M. White"], ["Photograph carte-de-visite of R.T. Greener"], ["Colored Pickets on Duty Near Dutch Gap"], ["Carte-de-visite portrait of United States Senator Hiram Revels"], ["Albumen print of men, women, and children picking cotton in South Carolina"], ["Radical Members of the South Carolina Legislature"], ["Tintype of two women"], ["Tintype of a man"], ["Tintype of a man"], ["Photographic postcard of an elderly couple sitting on a porch"], ["Tinted photograph of young Mae Reeves"], ["Photograph of James Lane firing a gun on the deck of the USS Indianapolis"], ["Daguerreotype of a woman with a child on her lap"], ["THE ONLY ORIGINAL University Singers of New Orleans"], ["Untitled"], ["Untitled"], ["Untitled"], ["Untitled"], ["National Guard Machine Gun Crew during Tulsa Race Riot 6-1-21"], ["Photograph of Lollaretta Pemberton"], ["Daguerreotype of a young woman"], ["Picture postcard of a North Carolina Convict Camp"], ["Photographic print of Ethel Waters as Carmen"], ["Panoramic photographic print of D Company, 369th regiment at Camp Merritt"], ["Tintype of a woman wearing a striped dress with flowers in her hair"], ["Untitled"], ["Untitled"], ["Ambrotype of Qualls Tibbs, 5th Sergeant, 27th U.S.C.T., Camp Delaware, Ohio"], ["Cabinet card of Col. Charles Young as a cadet at West Point"], ["Graduation portrait of Octavia C. Long"], ["Wedding portrait of Lollaretta Pemberton and Grover Allen"], ["No. 18, Upper Broad Street"], ["Photograph of Pearl Bailey"], ["Photographic print of unidentified woman and child"], ["Photographic postcard with image of a small child"], ["Tintype of a young girl in a paper radio frame"], ["Photographic postcard of a woman"], ["Photographic postcard of a man"], ["Photographic postcard of an unidentified young boy"], ["Photgraphic print of Paul Kendrick Bryant"], ["Tintype of woman in jacket and dress with hat and muff"], ["Photograph of a man and woman sitting outside of a storefront"], ["Photograph of a man sitting down with a woman standing next to him"], ["Photograph of a man wearing a suit and necktie"], ["Albumen print of Rev. Nelson W. Jordan"], ["Graves of 92nd Div - Pont du Mosson, Meuthe et Moselle. Nov. 24, 1918"], ["A close shave - 317th Supply Train, Belleville, Meuse Oct. 12, 1918"], ["Card photograph of three unidentified men wearing ribbons on their jackets"], ["No. 615, The Way the Negro Race is Dying Out: Mrs. Whitaker and her Children"], ["Cotton is King, Plantation Scene, Georgia, U. S. A."], ["Photograph of a woman holding a parasol"], ["Photograph of a man wearing a suit"], ["Framed photograph of an unidentified WWI sailor"], ["Photographic postcard of WWI soldier"], ["Carte-de-visite of an unidentified Union soldier"], ["Lantern slide of the slave dealers, Birch & Co., in Alexandria, Virginia"], ["Photograph of Kappa Alpha Psi members"], ["Photographic postcard of Oscar Calmeise"], ["Tintype of a young woman with a white child"], ["Frederick Douglass"], ["Cabinet card of Sarah Ann Blunt Crozley"], ["Tintype portrait of Creed Miller with star-shaped military identification pin"], ["Cabinet card of a newspaper carrier"], ["Untitled"], ["Untitled"], ["No. 52"], ["Photograph of Erskine Hawkins"], ["Print of Cab Calloway in checked suit standing in front of microphone"], ["Photograph of Jimmie Lunceford"], ["Photographic print of unidentified woman"], ["Photograph of a woman"], ["Photograph of a man and woman standing on a sidewalk"], ["John A. Raub store, Little Eagle, S.D."], ["Photograph of a woman standing next to a chair and holding a book"], ["Photograph of Bessie Durr in a white dress"], ["The Undertaker"], ["Page 22 of album belonging to Lewis C. Smith"], ["Photograph of Chase County High School (Kansas) baseball team"], ["Mess- M.T.R.S men 92nd Div. - Belleville, France Nov. 17, 1918"], ["Cabinet card of an unidentified woman wearing a top hat and a fur stole"], ["Negro Cabins on Kenilworth Plantation"], ["Photograph of three women standing behind a seated man"], ["Photograph of a woman wearing a white dress"], ["Photograph of a man in a suit"], ["Photographic postcard of soldiers of L Company, 25th Infantry"], ["Photograph album owned by Emily Howland"], ["Carte-de-visite portrait of M. J. Burleigh"], ["Carte-de-visite portrait of Abby D. Munro"], ["Carte-de-visite portrait of William Henry Channing"], ["Photographic postcard of WWI soldier"], ["The Sub-Committee of Management and Counsel of the Grand United Order of Odd Fellows (1907-1908)"], ["Carte-de-visite of Preston Taylor as a drummer with the 116th USCT"], ["Photograph of a young couple in Texas"], ["Panoramic photograph of workers outside the Grendel Textile Mill"], ["No. 50, Ox & Mule Team"], ["No. 44, Weighing Cotton"], ["No. 48, Cotton Press"], ["Print of Cab Calloway conducting his band"], ["Piece of a photographic postcard of an unidentified woman in a jacket and pants"], ["Photographic postcard of unidentified woman"], ["A photographic postcard of an unidentified woman"], ["Stereograph card of of an unidentified woman"], ["Photographic print of a woman in front of a building"], ["Photographic postcard of three unidentified women"], ["Cotton is King - Plantation Scene, Georgia"], ["51-Sugar Cane Plantation, La."], ["Cabinet card portrait of Thomas Mundy Peterson"], ["Gelatin silver print of of Roland Hayes"], ["No. 1018, White Man's Bar"], ["Tintype of a man wearing a suit with a pendant on the lapel"], ["Carte-de-visite portrait of an unidentified woman"], ["Photographic postcard of WWI soldiers"], ["Photographic postcard of WWI soldier with rifle"], ["Photographic postcard of two WWI soldiers"], ["Photograph of Hall Johnson and the Negro String Quartet"], ["Gelatin silver print of Mary Church Terrell"], ["Ambrotype of a young woman holding a white baby"], ["Tintype of a man"], ["Tintype of a woman"], ["Tintype of a woman"], ["Carte-de-visite of a sailor named Jim"], ["Untitled"], ["Untitled"], ["Photograph of an unidentified man in front of car"], ["Photograph of the Greenwood district of Tulsa, Oklahoma"], ["Photographic postcard of Charles Wilbur Rogan in the Philippines"], ["Gathering Watermelons"], ["Locket with photographs of Harriette and Harry T. Moore"], ["Print of Cab Calloway conducting his band with a large audience visible"], ["Photograph of Billie Holiday"], ["Albumen print of an unidentified woman sitting on stairs"], ["Photographic postcard of an unidentified woman"], ["Photographic print of a woman on a brick wall"], ["Photographic postcard of a boy wearing a double-breasted jacket and breeches"], ["Daguerreotype of William Lloyd Garrison"], ["Tintype of a woman wearing a white hat and holding a book"], ["Crockett Riding Mount Toro. Salinas Rodeo, 1919"], ["Photographic print of a man"], ["Photograph of Senator Henry Hall Falkener and family"], ["Photograph of a Guilford County school bus and school children"], ["Photograph of two young girls"], ["Photograph of two men and two women"], ["Photograph of young man standing next to a wicker chair"], ["Postcard of a young man wearing a suit and bow tie"], ["Photograph of a woman wearing a dress decorated with lace"], ["Photograph of a woman in a white dress with black ribbons on the left side"], ["Photograph of a woman in a dark dress and a girl in a white dress"], ["Photograph of a young man in a dark colored suit"], ["Photograph of the Knoxville College glee club"], ["Photograph of a young woman wearing a black dress"], ["Photograph of a young woman wearing a white dress with a dark colored collar"], ["Photograph of a bearded man wearing a dark colored suit jacket"], ["Photograph of a man with a goatee and a dark colored suit"], ["Photograph of a woman in a light colored dress with a frilled collar"], ["Photograph of a Buffalo Soldier with hat, trumpet, guitar, and cartridge belt"], ["Photograph of a U.S. Army corporal holding a cane"], ["Photograph of a Buffalo Soldier holding a pair of gloves"], ["Photograph of an unidentified Buffalo Soldier with a mustache"], ["Photograph of an unidentified Buffalo Soldier medic"], ["Photograph of three children, a white cat, a woman and a man"], ["Photograph of a man and a woman"], ["Photograph of an unidentified Buffalo Soldier"], ["Photograph of Edward Lee Baker, Jr. of the 10th US Cavalry"], ["Photograph of a woman"], ["Photograph of a man wearing a suit jacket and necktie"], ["Photograph of a girl in a white dress with flower arrangements"], ["Photograph of a woman in profile"], ["Photograph of a woman sitting in a chair, holding a book"], ["Photograph of a woman standing and a woman sitting"], ["Photograph of Fitz Lee"], ["Photograph of two girls wearing white"], ["Photograph of a man in a suit, leaning on a cane and holding a hat"], ["Photograph a man with a mustache wearing a suit"], ["Photograph of two girls standing in front of a door"], ["Photograph of two men and three women."], ["Photographic print of men gathered for State Funeral Directors' meeting"], ["367 Machine Gun Bn. enroute to Argonne Front passing thru St. Minehould Sept. 15, 1923"], ["Regimental Hdqrs. - Bourbain les Baine - Oct. 2, 1918"], ["Hoeing Rice"], ["Photograph of two soldiers"], ["Tintype of Emmaline"], ["Carte-de-visite portrait of Emperor Maximilian"], ["Framed panoramic photograph of 183d Brigade of the 92d Infantry Division"], ["Albumen print of a woman and two children in front of a log house in Georgia"], ["Photographic print of Jessie Greer at her high school graduation"], ["Photographic postcard of soliders in World War One at Verdun"], ["Tintype of a portrait of man"], ["Ambrotype of a Civil War soldier"], ["Ambrotype of a white baby being held by a man"], ["Tintype of an unidentified man"], ["Tintype of a baby surrounded by lace coverlet"], ["Albumen print of Harriet Tubman"], ["Tintype of two children"], ["Tintype of a man"], ["Old Negro saving few articles after mob violence. Many went destitute + homeless"], ["Tintype of two men wearing suits"], ["Ruins of the Tulsa Race Riot 6-1-21"], ["A group portrait of young men from the High School YMCA Group in Tulsa, Oklahoma"], ["No. 86, Picking Cotton"], ["Photographic postcard of Mr. Robinson"], ["Photographic postcard of three unidentified men"], ["Tintype in a paper case of three unidentified young women seated"], ["Ambrotype of three women in dotted calico dresses"], ["Tintype of John H. Copeland in an embossed leather case"], ["Tintype of a woman wearing a dress with hat and bag"]];
-
-var photograph_data = [
-{"id": 0, "value": "Photograph", "parent": -1},
-{"id": 1, "value": "a man with a mustache wearing a suit", "parent": 0},
-{"id": 2, "value": "of", "parent": 0},
-{"id": 3, "value": "portrait of", "parent": 0},
-{"id": 4, "value": "album", "parent": 0},
-{"id": 5, "value": "for The Emperor Jones", "parent": 0},
-{"id": 6, "value": "postcard of the Jenkins Orphanage Band, Charleston, South Carolina", "parent": 0},
-{"id": 7, "value": "carte-de-visite of R.T. Greener", "parent": 0},
-{"id": 8, "value": "a", "parent": 2},
-{"id": 9, "value": "the", "parent": 2},
-{"id": 10, "value": "young man standing next to a wicker chair", "parent": 2},
-{"id": 11, "value": "Ollie Hadley", "parent": 2},
-{"id": 12, "value": "three", "parent": 2},
-{"id": 13, "value": "two", "parent": 2},
-{"id": 14, "value": "Fitz Lee", "parent": 2},
-{"id": 15, "value": "an unidentified man", "parent": 2},
-{"id": 16, "value": "Cpl . Lawrence", "parent": 2},
-{"id": 17, "value": "Lena Horne in profile", "parent": 2},
-{"id": 18, "value": "Regina Egertion Wright with Colored Training School diploma", "parent": 2},
-{"id": 19, "value": "Jim Europe’s 369th Infantry Harlem Hellfighters Brass Band", "parent": 2},
-{"id": 20, "value": "Lucille Brown", "parent": 2},
-{"id": 21, "value": "Lucille Brown", "parent": 2},
-{"id": 22, "value": "Maggie Hickman in a cap and gown", "parent": 2},
-{"id": 23, "value": "Theo Lane", "parent": 2},
-{"id": 24, "value": "James Lane firing a gun on the deck of the USS Indianapolis", "parent": 2},
-{"id": 25, "value": "Bosey E. Vick", "parent": 2},
-{"id": 26, "value": "Erskine Hawkins", "parent": 2},
-{"id": 27, "value": "World War", "parent": 2},
-{"id": 28, "value": "unidentified woman wearing French Antillean dress", "parent": 2},
-{"id": 29, "value": "theatre production with blackface actors and Oliver Howard Horner", "parent": 2},
-{"id": 30, "value": "Tobe Brown", "parent": 2},
-{"id": 31, "value": "Pearl Bailey", "parent": 2},
-{"id": 32, "value": "Sammy Davis Jr .", "parent": 2},
-{"id": 33, "value": "Lollaretta Pemberton", "parent": 2},
-{"id": 34, "value": "B.C. Franklin", "parent": 2},
-{"id": 35, "value": "Billie Holiday", "parent": 2},
-{"id": 36, "value": "Mattie Jones", "parent": 2},
-{"id": 37, "value": "Hall Johnson and the Negro String Quartet", "parent": 2},
-{"id": 38, "value": "North Greenwood Avenue in Tulsa , Oklahoma", "parent": 2},
-{"id": 39, "value": "schoolchildren and teachers", "parent": 2},
-{"id": 40, "value": "Aaron Molyneaux Hewlett , gymnasium coach of Harvard University", "parent": 2},
-{"id": 41, "value": "Amos Harper off to school", "parent": 2},
-{"id": 42, "value": "Tom Durr standing next to a chair with a hat on it", "parent": 2},
-{"id": 43, "value": "people standing in a line on a street in Tulsa , Oklahoma", "parent": 2},
-{"id": 44, "value": "Senator Henry Hall Falkener and family", "parent": 2},
-{"id": 45, "value": "Mary Lou Williams playing piano with Andy Kirk and his orchestra", "parent": 2},
-{"id": 46, "value": "Larby Smith standing next to a wicker chair .", "parent": 2},
-{"id": 47, "value": "E. G. Humphrey wearing a suit", "parent": 2},
-{"id": 48, "value": "Jimmie Lunceford", "parent": 2},
-{"id": 49, "value": "Marion Durr wearing a shirt and vest", "parent": 2},
-{"id": 50, "value": "integrated American Expeditionary Forces in France", "parent": 2},
-{"id": 51, "value": "Kappa Alpha Psi members", "parent": 2},
-{"id": 52, "value": "members of the 55th Massachusetts Infantry", "parent": 2},
-{"id": 53, "value": "Bessie Durr in a white dress", "parent": 2},
-{"id": 54, "value": "Dr . William H. Conner and family outside their home", "parent": 2},
-{"id": 55, "value": "men", "parent": 2},
-{"id": 56, "value": "Lucius Harper , Jr . off to school", "parent": 2},
-{"id": 57, "value": "Chase County High School (Kansas) baseball team", "parent": 2},
-{"id": 58, "value": "Malenda Polk wearing a white , high collar dress .", "parent": 2},
-{"id": 59, "value": "man", "parent": 8},
-{"id": 60, "value": "soldier", "parent": 8},
-{"id": 61, "value": "woman", "parent": 8},
-{"id": 62, "value": "a bearded man wearing a dark colored suit jacket", "parent": 8},
-{"id": 63, "value": "young", "parent": 8},
-{"id": 64, "value": "toddler standing on a wicker chair", "parent": 8},
-{"id": 65, "value": "girl", "parent": 8},
-{"id": 66, "value": "hunting party", "parent": 8},
-{"id": 67, "value": "baby", "parent": 8},
-{"id": 68, "value": "couple standing behind a chair", "parent": 8},
-{"id": 69, "value": "staged sword duel", "parent": 8},
-{"id": 70, "value": "Guilford County school bus and school children", "parent": 8},
-{"id": 71, "value": "Knoxville College glee club", "parent": 9},
-{"id": 72, "value": "Greenwood district of Tulsa , Oklahoma", "parent": 9},
-{"id": 73, "value": "Cotten family", "parent": 9},
-{"id": 74, "value": "John H. Scott family home", "parent": 9},
-{"id": 75, "value": "children , a white cat , a woman and a man", "parent": 12},
-{"id": 76, "value": "women standing behind a seated man", "parent": 12},
-{"id": 77, "value": "girls", "parent": 13},
-{"id": 78, "value": "men", "parent": 13},
-{"id": 79, "value": "soldiers", "parent": 13},
-{"id": 80, "value": "young girls", "parent": 13},
-{"id": 81, "value": "in front of car", "parent": 15},
-{"id": 82, "value": "holding a saber", "parent": 15},
-{"id": 83, "value": "Leslie McVey", "parent": 16},
-{"id": 84, "value": "McVey in uniform wearing the Croix de Guerre medal", "parent": 16},
-{"id": 85, "value": "among Poro agents and one small child", "parent": 20},
-{"id": 86, "value": "and Elder Brown among others", "parent": 20},
-{"id": 87, "value": "II soldiers from Company D , 8th Battalion , Ft . Belvoir", "parent": 27},
-{"id": 88, "value": "I soldiers", "parent": 27},
-{"id": 89, "value": "and unidentified men in Ardmore , Oklahoma", "parent": 34},
-{"id": 90, "value": ", I.H. Spears , and Effie Thompson", "parent": 34},
-{"id": 91, "value": ", women , and children in a yard", "parent": 55},
-{"id": 92, "value": "running with a football in front of two houses", "parent": 55},
-{"id": 93, "value": "herding cattle in a field", "parent": 55},
-{"id": 94, "value": "wearing a", "parent": 59},
-{"id": 95, "value": "in", "parent": 59},
-{"id": 96, "value": "and", "parent": 59},
-{"id": 97, "value": "with a", "parent": 59},
-{"id": 98, "value": "sitting down with a woman standing next to him", "parent": 59},
-{"id": 99, "value": "with a mustache", "parent": 60},
-{"id": 100, "value": "holding a", "parent": 60},
-{"id": 101, "value": "from the 10th US Cavalry", "parent": 60},
-{"id": 102, "value": "wearing a", "parent": 61},
-{"id": 103, "value": "in", "parent": 61},
-{"id": 104, "value": "holding a", "parent": 61},
-{"id": 105, "value": "sitting", "parent": 61},
-{"id": 106, "value": "standing", "parent": 61},
-{"id": 107, "value": "man in a dark colored suit", "parent": 63},
-{"id": 108, "value": "woman in a white dress and gloves", "parent": 63},
-{"id": 109, "value": "couple in Texas", "parent": 63},
-{"id": 110, "value": "reading", "parent": 65},
-{"id": 111, "value": "wearing a pleated dress", "parent": 65},
-{"id": 112, "value": "sitting in a chair", "parent": 67},
-{"id": 113, "value": "dressed in white and sitting in a chair", "parent": 67},
-{"id": 114, "value": "wearing dark colored clothing sitting in a chair", "parent": 67},
-{"id": 115, "value": "suit", "parent": 94},
-{"id": 116, "value": "light colored jacket , vest and necktie", "parent": 94},
-{"id": 117, "value": "dark colored suit with a pocket watch in his vest", "parent": 94},
-{"id": 118, "value": "a", "parent": 95},
-{"id": 119, "value": "uniform", "parent": 95},
-{"id": 120, "value": "a woman", "parent": 96},
-{"id": 121, "value": "woman", "parent": 96},
-{"id": 122, "value": "goatee and a dark colored suit", "parent": 97},
-{"id": 123, "value": "mustache wearing a dark jacket", "parent": 97},
-{"id": 124, "value": "beard wearing a dark colored suit and vest", "parent": 97},
-{"id": 125, "value": ",", "parent": 115},
-{"id": 126, "value": "jacket and necktie", "parent": 115},
-{"id": 127, "value": "and necktie", "parent": 115},
-{"id": 128, "value": "suit ,", "parent": 118},
-{"id": 129, "value": "dark colored jacket", "parent": 118},
-{"id": 130, "value": "in", "parent": 121},
-{"id": 131, "value": "sitting outside of a storefront", "parent": 121},
-{"id": 132, "value": "standing on a sidewalk", "parent": 121},
-{"id": 133, "value": "derby hat and holding a suitcase", "parent": 125},
-{"id": 134, "value": "vest and necktie", "parent": 125},
-{"id": 135, "value": "vest and necktie", "parent": 128},
-{"id": 136, "value": "leaning on a cane and holding a hat", "parent": 128},
-{"id": 137, "value": "formal clothes", "parent": 130},
-{"id": 138, "value": "front of car", "parent": 130},
-{"id": 139, "value": "pair of gloves", "parent": 100},
-{"id": 140, "value": "bugle", "parent": 100},
-{"id": 141, "value": "cane", "parent": 100},
-{"id": 142, "value": "dark colored dress and glasses", "parent": 102},
-{"id": 143, "value": "white dress with a dark colored collar", "parent": 102},
-{"id": 144, "value": "dress decorated with lace", "parent": 102},
-{"id": 145, "value": "black dress", "parent": 102},
-{"id": 146, "value": "a", "parent": 103},
-{"id": 147, "value": "profile", "parent": 103},
-{"id": 148, "value": "white dress", "parent": 146},
-{"id": 149, "value": "black dress holding a guitar", "parent": 146},
-{"id": 150, "value": "dark dress and a girl in a white dress", "parent": 146},
-{"id": 151, "value": "light colored dress with a frilled collar", "parent": 146},
-{"id": 152, "value": "standing next to a chair", "parent": 148},
-{"id": 153, "value": "with black ribbons on the left side", "parent": 148},
-{"id": 154, "value": "parasol", "parent": 104},
-{"id": 155, "value": "closed parasol", "parent": 104},
-{"id": 156, "value": "in a", "parent": 105},
-{"id": 157, "value": "with her legs crossed", "parent": 105},
-{"id": 158, "value": "wicker chair", "parent": 156},
-{"id": 159, "value": "chair , holding a book", "parent": 156},
-{"id": 160, "value": "and a woman sitting", "parent": 106},
-{"id": 161, "value": "next to a chair and holding a book", "parent": 106},
-{"id": 162, "value": "on the porch of a house", "parent": 106},
-{"id": 163, "value": "standing in front of a door", "parent": 77},
-{"id": 164, "value": "wearing white", "parent": 77},
-{"id": 165, "value": "and", "parent": 78},
-{"id": 166, "value": "linking arms", "parent": 78},
-{"id": 167, "value": "three women .", "parent": 165},
-{"id": 168, "value": "two women", "parent": 165},
-{"id": 169, "value": "on the beach", "parent": 83},
-{"id": 170, "value": "with his son , Lawrence McVey Jr .", "parent": 83},
-{"id": 171, "value": "a", "parent": 3},
-{"id": 172, "value": "Samuel Grant", "parent": 3},
-{"id": 173, "value": "woman in a black dress", "parent": 171},
-{"id": 174, "value": "man dressed as a cowboy", "parent": 171},
-{"id": 175, "value": "page with three photographs of women in Tulsa , Oklahoma", "parent": 4},
-{"id": 176, "value": "presented to Beatrice Williams", "parent": 4},
-{"id": 177, "value": "owned by Emily Howland", "parent": 4},
-{"id": 178, "value": "of 25th Regiment USCT soldiers owned by William A. Prickitt", "parent": 4}
+  {sentence:'Photograph postcard of the Jenkins Orphanage Band, Charleston, South Carolina',
+  imageUrl:'./images/Capture3.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.63.88.1?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Djenkins"
+  },
+  
+  {sentence:'Photograph carte-de-visite of R.T. Greener',
+  imageUrl:'./images/Capture4.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.105.23?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dgreener"
+  },
+  
+  {sentence:'Photograph portrait of a woman in a black dress',
+  imageUrl:'./images/Capture5.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.44?destination=edan-search/collection_search%3Fpage%3D3%26edan_q%3DPhotograph%2520portrait%2520of%2520a%2520woman%2520in%2520a%2520black%2520dress%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_fq%255B1%255D%3Dobject_type%253A%2522Photographs%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph portrait of a man dressed as a cowboy',
+  imageUrl:'./images/Capture6.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.35.19?destination=edan-search/collection_search%3Fedan_q%3Dcowboy%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph portrait of Samuel Grant',
+  imageUrl:'./images/Capture7.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.6.220?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dsamuel%252Bgrant"
+  },
+  
+  {sentence:'Photograph album page with three photographs of women in Tulsa , Oklahoma',
+  imageUrl:'./images/Capture8.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.79.20abc?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dtulsa%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph album of 25th Regiment USCT soldiers owned by William A. Prickitt',
+  imageUrl:'./images/Capture9.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.88?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dprickitt"
+  },
+  
+  {sentence:'Photograph album owned by Emily Howland',
+  imageUrl:'./images/Capture10.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2017.30?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Downed%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_fq%255B1%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B2%255D%3Dp.edanmdm.indexedstructured.name%253A%2522Howland%252C%2520Emily%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of Malenda Polk wearing a white , high collar dress .',
+  imageUrl:'./images/Capture11.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.8?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dmalenda"
+  },
+  
+  {sentence:'Photograph of Chase County High School (Kansas) baseball team',
+  imageUrl:'./images/Capture12.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.94.1?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dchase%252Bcounty"
+  },
+  
+  {sentence:'Photograph of Lucius Harper , Jr . off to school',
+  imageUrl:'./images/Capture13.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.30.3?destination=edan-search/collection_search%3Fedan_q%3Dlucius%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of men running with a football in front of two houses',
+  imageUrl:'./images/Capture15.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.79.4?destination=edan-search/collection_search%3Fedan_q%3Dfootball%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of men herding cattle in a field',
+  imageUrl:'./images/Capture16.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.35.2?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dherding"
+  },
+  
+  {sentence:'Photograph of Dr . William H. Conner and family outside their home',
+  imageUrl:'./images/Capture17.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.94.11?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3DCONNER"
+  },
+  
+  {sentence:'Photograph of Bessie Durr in a white dress',
+  imageUrl:'./images/Capture18.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.3?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dbessie"
+  },
+  
+  {sentence:'Photograph of members of the 55th Massachusetts Infantry',
+  imageUrl:'./images/Capture19.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.115.5?destination=edan-search/collection_search%3Fedan_q%3Dmassachusetts%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_fq%255B1%255D%3Dobject_type%253A%2522Photographs%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of Kappa Alpha Psi members',
+  imageUrl:'./images/Capture20.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.61?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dkappa"
+  },
+  
+  {sentence:'Photograph of integrated American Expeditionary Forces in France',
+  imageUrl:'./images/Capture21.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.63.78?destination=edan-search/collection_search%3Fedan_q%3Dintegrated%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of Marion Durr wearing a shirt and vest',
+  imageUrl:'./images/Capture22.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.24?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Ddurr%26edan_local%3D1%26edan_fq%255B0%255D%3Donline_media_type%253A%2522Images%2522"
+  },
+  
+  {sentence:'Photograph of Jimmie Lunceford',
+  imageUrl:'./images/Capture23.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.46.25.46?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dlunceford"
+  },
+  
+  {sentence:'Photograph of E. G. Humphrey wearing a suit',
+  imageUrl:'./images/Capture24.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.17?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dhumphrey"
+  },
+  
+  {sentence:'Photograph of Larby Smith standing next to a wicker chair .',
+  imageUrl:'./images/Capture25.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.11?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dlarby"
+  },
+  
+  {sentence:'Photograph of Mary Lou Williams playing piano with Andy Kirk and his orchestra',
+  imageUrl:'./images/Capture26.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.3.10?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dkirk"
+  },
+  
+  {sentence:'Photograph of Senator Henry Hall Falkener and family',
+  imageUrl:'./images/Capture27.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.94.19?destination=edan-search/collection_search%3Fedan_q%3Dfalkener%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of people standing in a line on a street in Tulsa , Oklahoma',
+  imageUrl:'./images/Capture28.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.79.15?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Doklahoma%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of Tom Durr standing next to a chair with a hat on it',
+  imageUrl:'./images/Capture29.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.23?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Ddurr"
+  },
+  
+  {sentence:'Photograph of Amos Harper off to school',
+  imageUrl:'./images/Capture30.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.30.6?destination=edan-search/collection_search%3Fedan_q%3Damos%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of Aaron Molyneaux Hewlett , gymnasium coach of Harvard University',
+  imageUrl:'./images/Capture31.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.174.9?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dmolyneaux"
+  },
+  
+  {sentence:'Photograph of schoolchildren and teachers',
+  imageUrl:'./images/Capture32.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.94.8?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dschoolchildren"
+  },
+  
+  {sentence:'Photograph of North Greenwood Avenue in Tulsa , Oklahoma',
+  imageUrl:'./images/Capture33.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.79.6?destination=edan-search/collection_search%3Fedan_q%3Dgreenwood%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of Hall Johnson and the Negro String Quartet',
+  imageUrl:'./images/Capture34.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_TA2013.166.1.1ab?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dquartet"
+  },
+  
+  {sentence:'Photograph of Mattie Jones',
+  imageUrl:'./images/Capture35.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.1?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dmattie"
+  },
+  
+  {sentence:'Photograph of Billie Holiday',
+  imageUrl:'./images/Capture36.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.46.25.90?destination=edan-search/collection_search%3Fedan_q%3Dbillie%2520holiday%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of B.C. Franklin and unidentified men in Ardmore , Oklahoma',
+  imageUrl:'./images/Capture37.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.176.3?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dardmore"
+  },
+  
+  {sentence:'Photograph of Lollaretta Pemberton',
+  imageUrl:'./images/Capture39.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2012.30.4?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3DLOLLARETTA"
+  },
+  
+  {sentence:'Photograph of Sammy Davis Jr .',
+  imageUrl:'./images/Capture40.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.118.192.2?destination=edan-search/collection_search%3Fedan_q%3Dsammy%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of Pearl Bailey',
+  imageUrl:'./images/Capture41.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.118.182.3?destination=edan-search/collection_search%3Fedan_q%3Dpearl%2520bailey%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of Tobe Brown',
+  imageUrl:'./images/Capture42.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.97.38.9?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dtobe%252Bbrown"
+  },
+  
+  {sentence:'Photograph of theatre production with blackface actors and Oliver Howard Horner',
+  imageUrl:'./images/Capture43.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.94.2?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dhorner"
+  },
+  
+  {sentence:'Photograph of unidentified woman wearing French Antillean dress',
+  imageUrl:'./images/Capture44.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.151.3?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dantillean"
+  },
+  
+  {sentence:'Photograph of World War II soldiers from Company D , 8th Battalion , Ft . Belvoir',
+  imageUrl:'./images/Capture45.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.253.8?destination=edan-search/collection_search%3Fedan_q%3Dbelvoir%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of World War I soldiers',
+  imageUrl:'./images/Capture46.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.97.23.13?destination=edan-search/collection_search%3Fpage%3D2%26edan_q%3Dsoldier%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of Erskine Hawkins',
+  imageUrl:'./images/Capture47.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.118.200?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Derskine"
+  },
+  
+  {sentence:'Photograph of Bosey E. Vick',
+  imageUrl:'./images/Capture48.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.66.75?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dbosey"
+  },
+  
+  {sentence:'Photograph of James Lane firing a gun on the deck of the USS Indianapolis',
+  imageUrl:'./images/Capture49.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.66.104?destination=edan-search/collection_search%3Fedan_q%3Dindianapolis%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Photograph of Theo Lane',
+  imageUrl:'./images/Capture50.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.66.152?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dtheo%252Blane"
+  },
+  
+  {sentence:'Photograph of Maggie Hickman in a cap and gown',
+  imageUrl:'./images/Capture51.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.36.154?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dmaggie%252Bhickman"
+  },
+  
+  {sentence:'Photograph of Lucille Brown among Poro agents and one small child',
+  imageUrl:'./images/Capture52.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.170.11?destination=edan-search/collection_search%3Fedan_q%3Dlucille%2520brown%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of Lucille Brown and Elder Brown among others',
+  imageUrl:'./images/Capture53.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.170.12?destination=edan-search/collection_search%3Fedan_q%3Dlucille%2520brown%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of Jim Europes 369th Infantry Harlem Hellfighters Brass Band',
+  imageUrl:'./images/Capture54.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.57.39?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dhellfighters"
+  },
+  
+  {sentence:'Photograph of Regina Egertion Wright with Colored Training School diploma',
+  imageUrl:'./images/Capture55.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.156.15.2?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Degertion"
+  },
+  
+  {sentence:'Photograph of Lena Horne in profile',
+  imageUrl:'./images/Capture56.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.27.1.1?destination=edan-search/collection_search%3Fedan_q%3Dlena%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of Cpl . Lawrence Leslie McVey on the beach',
+  imageUrl:'./images/Capture57.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.108.18?destination=edan-search/collection_search%3Fedan_q%3Dcpl%2520lawrence%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_fq%255B1%255D%3Dobject_type%253A%2522Photographs%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of Cpl . Lawrence Leslie McVey with his son , Lawrence McVey Jr .',
+  imageUrl:'./images/Capture58.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.108.19?destination=edan-search/collection_search%3Fedan_q%3Dcpl%2520lawrence%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_fq%255B1%255D%3Dobject_type%253A%2522Photographs%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of Cpl . Lawrence McVey in uniform wearing the Croix de Guerre medal',
+  imageUrl:'./images/Capture59.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.108.16?destination=edan-search/collection_search%3Fedan_q%3Dcpl%2520lawrence%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_fq%255B1%255D%3Dobject_type%253A%2522Photographs%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of an unidentified man in front of car',
+  imageUrl:'./images/Capture60.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.175.15?destination=edan-search/collection_search%3Fpage%3D11%26edan_q%3Din%2520front%2520of%2520car%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of an unidentified man holding a saber',
+  imageUrl:'./images/Capture61.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.174.11?destination=edan-search/collection_search%3Fedan_q%3Dsaber%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Photograph of Fitz Lee',
+  imageUrl:'./images/Capture62.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.49?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dfitz%252Blee"
+  },
+  
+  {sentence:'Photograph of two girls standing in front of a door',
+  imageUrl:'./images/Capture63.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.56?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Ddoor"
+  },
+  
+  {sentence:'Photograph of two girls wearing white',
+  imageUrl:'./images/Capture64.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.50?destination=edan-search/collection_search%3Fedan_q%3Dwearing%2520white%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of two men and three women .',
+  imageUrl:'./images/Capture65.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.60?destination=edan-search/collection_search%3Fedan_q%3Dtwo%2520men%2520three%2520women%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of two men and two women',
+  imageUrl:'./images/Capture66.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.11?destination=edan-search/collection_search%3Fedan_q%3Dtwo%2520men%2520three%2520women%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of two men linking arms',
+  imageUrl:'./images/Capture67.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.97.38.18?destination=edan-search/collection_search%3Fedan_q%3Dtwo%2520men%2520three%2520women%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of two young girls',
+  imageUrl:'./images/Capture68.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.1?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dyoung%252Bgirls"
+  },
+  
+  {sentence:'Photograph of three children , a white cat , a woman and a man',
+  imageUrl:'./images/Capture69.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.31?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dwhite%252Bcat"
+  },
+  
+  {sentence:'Photograph of three women standing behind a seated man',
+  imageUrl:'./images/Capture70.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.25?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dseated%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of Ollie Hadley',
+  imageUrl:'./images/Capture71.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.51?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dhadley"
+  },
+  
+  {sentence:'Photograph of young man standing next to a wicker chair',
+  imageUrl:'./images/Capture72.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.12?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dwicker"
+  },
+  
+  {sentence:'Photograph of the Knoxville College glee club',
+  imageUrl:'./images/Capture73.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.18?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dknoxville"
+  },
+  
+  {sentence:'Photograph of the Greenwood district of Tulsa , Oklahoma',
+  imageUrl:'./images/Capture74.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.60.7?destination=edan-search/collection_search%3Fedan_q%3Dgreenwood%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of the Cotten family',
+  imageUrl:'./images/Capture75.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.60.1?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dcotten"
+  },
+  
+  {sentence:'Photograph of the John H. Scott family home',
+  imageUrl:'./images/Capture76.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.94.13?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Djohn%252Bscott"
+  },
+  
+  {sentence:'Photograph of a Guilford County school bus and school children',
+  imageUrl:'./images/Capture77.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.94.9?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dguilford"
+  },
+  
+  {sentence:'Photograph of a staged sword duel',
+  imageUrl:'./images/Capture78.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.16?destination=edan-search/collection_search%3Fedan_q%3Dstaged%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  
+  {sentence:'Photograph of a couple standing behind a chair',
+  imageUrl:'./images/Capture79.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.5?destination=edan-search/collection_search%3Fedan_q%3Dcouple%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a baby sitting in a chair',
+  imageUrl:'./images/Capture80.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.2?destination=edan-search/collection_search%3Fedan_q%3Dbaby%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a baby dressed in white and sitting in a chair',
+  imageUrl:'./images/Capture81.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.28?destination=edan-search/collection_search%3Fedan_q%3Dbaby%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a baby wearing dark colored clothing sitting in a chair',
+  imageUrl:'./images/Capture82.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.30?destination=edan-search/collection_search%3Fedan_q%3Dbaby%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a hunting party',
+  imageUrl:'./images/Capture83.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.94.27?destination=edan-search/collection_search%3Fpage%3D1%26edan_local%3D1%26edan_q%3Dhunting"
+  },
+  
+  {sentence:'Photograph of a girl reading',
+  imageUrl:'./images/Capture84.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.36.148?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dgirl%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a girl wearing a pleated dress',
+  imageUrl:'./images/Capture85.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.15?destination=edan-search/collection_search%3Fedan_q%3Dgirl%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a toddler standing on a wicker chair',
+  imageUrl:'./images/Capture86.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.6?destination=edan-search/collection_search%3Fedan_q%3Dtoddler%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Photograph of a young man in a dark colored suit',
+  imageUrl:'./images/Capture87.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.17?destination=edan-search/collection_search%3Fedan_q%3Dyoung%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a young couple in Texas',
+  imageUrl:'./images/Capture88.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2019.28.40?destination=edan-search/collection_search%3Fedan_q%3Dyoung%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a bearded man wearing a dark colored suit jacket',
+  imageUrl:'./images/Capture90.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.21?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dbearded"
+  },
+  
+  {sentence:'Photograph of a woman wearing a dark colored dress and glasses',
+  imageUrl:'./images/Capture91.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.10?destination=edan-search/collection_search%3Fpage%3D3%26edan_q%3Dcolored%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a woman wearing a white dress with a dark colored collar',
+  imageUrl:'./images/Capture92.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.20?destination=edan-search/collection_search%3Fedan_q%3Dcollar%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a woman wearing a dress decorated with lace',
+  imageUrl:'./images/Capture93.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.14?destination=edan-search/collection_search%3Fedan_q%3Ddecorated%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a woman in a white dress standing next to a chair',
+  imageUrl:'./images/Capture95.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.8?destination=edan-search/collection_search%3Fedan_q%3Dstanding%2520next%2520chair%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of a woman in a white dress with black ribbons on the left side',
+  imageUrl:'./images/Capture96.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.15?destination=edan-search/collection_search%3Fedan_q%3Dblack%2520ribbons%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522"
+  },
+  
+  {sentence:'Photograph of a woman in a black dress holding a guitar',
+  imageUrl:'./images/Capture97.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.48?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dholding%252Bguitar"
+  },
+  
+  {sentence:'Photograph of a woman in a dark dress and a girl in a white dress',
+  imageUrl:'./images/Capture98.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.16?destination=edan-search/collection_search%3Fedan_q%3Ddark%2520dress%2520white%2520girl%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Photograph of a woman in a light colored dress with a frilled collar',
+  imageUrl:'./images/Capture99.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.23?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dfrilled"
+  },
+  
+  {sentence:'Photograph of a woman in profile',
+  imageUrl:'./images/Capture100.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.41?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dprofile"
+  },
+  
+  {sentence:'Photograph of a woman holding a parasol',
+  imageUrl:'./images/Capture101.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.33?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dparasol"
+  },
+  
+  {sentence:'Photograph of a woman holding a closed parasol',
+  imageUrl:'./images/Capture102.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.35?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dparasol"
+  },
+  
+  {sentence:'Photograph of a woman sitting in a wicker chair',
+  imageUrl:'./images/Capture103.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.46?destination=edan-search/collection_search%3Fedan_q%3Dwicker%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a woman sitting in a chair , holding a book',
+  imageUrl:'./images/Capture104.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.42?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dwoman%252Bsitting"
+  },
+  
+  {sentence:'Photograph of a woman sitting with her legs crossed',
+  imageUrl:'./images/Capture105.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.25?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dcrossed%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a woman standing and a woman sitting',
+  imageUrl:'./images/Capture106.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.43?destination=edan-search/collection_search%3Fedan_q%3Dwoman%2520standing%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a woman standing next to a chair and holding a book',
+  imageUrl:'./images/Capture107.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.12?destination=edan-search/collection_search%3Fpage%3D2%26edan_q%3Dwoman%2520standing%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a woman standing on the porch of a house',
+  imageUrl:'./images/Capture108.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.35.25?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dwoman%2520standing%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a Buffalo Soldier holding a pair of gloves',
+  imageUrl:'./images/Capture110.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.27?destination=edan-search/collection_search%3Fedan_q%3Dsoldier%2520holding%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man wearing a suit jacket and necktie',
+  imageUrl:'./images/Capture116.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.39?destination=edan-search/collection_search%3Fedan_q%3Dwearing%2520a%2520suit%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man wearing a suit and necktie',
+  imageUrl:'./images/Capture117.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.4?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dwearing%2520a%2520suit%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man wearing a light colored jacket , vest and necktie',
+  imageUrl:'./images/Capture115.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.26?destination=edan-search/collection_search%3Fpage%3D2%26edan_q%3Dwearing%2520a%2520suit%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man wearing a dark colored suit with a pocket watch in his vest',
+  imageUrl:'./images/Capture114.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.27?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dwearing%2520a%2520suit%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man in a suit , vest and necktie',
+  imageUrl:'./images/Capture118.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.7?destination=edan-search/collection_search%3Fpage%3D2%26edan_q%3Din%2520a%2520suit%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man in a suit , leaning on a cane and holding a hat',
+  imageUrl:'./images/Capture119.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.52?destination=edan-search/collection_search%3Fedan_q%3Din%2520a%2520suit%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man in a dark colored jacket',
+  imageUrl:'./images/Capture120.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.30?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Din%2520a%2520dark%2520colored%2520jacket%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man and a woman',
+  imageUrl:'./images/Capture122.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.32?destination=edan-search/collection_search%3Fedan_q%3Dman%2520and%2520woman%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man and woman in formal clothes',
+  imageUrl:'./images/Capture123.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.9?destination=edan-search/collection_search%3Fedan_q%3Dman%2520and%2520woman%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man and woman in front of car',
+  imageUrl:'./images/Capture124.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.60.6?destination=edan-search/collection_search%3Fpage%3D2%26edan_q%3Dman%2520and%2520woman%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man and woman sitting outside of a storefront',
+  imageUrl:'./images/Capture125.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.35.5?destination=edan-search/collection_search%3Fedan_q%3Dman%2520and%2520woman%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man and woman standing on a sidewalk',
+  imageUrl:'./images/Capture126.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.35.4?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dman%2520and%2520woman%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man with a goatee and a dark colored suit',
+  imageUrl:'./images/Capture127.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.22?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dgoatee"
+  },
+  
+  {sentence:'Photograph of a man with a mustache wearing a dark jacket',
+  imageUrl:'./images/Capture128.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.13?destination=edan-search/collection_search%3Fpage%3D7%26edan_q%3Dmustache%2520wearing%2520a%2520dark%2520jacket%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man with a beard wearing a dark colored suit and vest',
+  imageUrl:'./images/Capture129.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.29?destination=edan-search/collection_search%3Fpage%3D6%26edan_q%3Dmustache%2520wearing%2520a%2520dark%2520jacket%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Photograph of a man sitting down with a woman standing next to him',
+  imageUrl:'./images/Capture130.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.61.19?destination=edan-search/collection_search%3Fedan_q%3Dman%2520and%2520woman%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Scrapbook fragment with five pictures adhered to it',
+  imageUrl:'./images/Capture131.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.59.1-.5?destination=edan-search/collection_search%3Fedan_q%3Dscrapbook%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Scrapbook page about the Wiley College Debate Team',
+  imageUrl:'./images/Capture132.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.43.5?destination=edan-search/collection_search%3Fedan_q%3Dscrapbook%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Portrait of a woman in graduation attire',
+  imageUrl:'./images/Capture133.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_TA2015.143.6.3?destination=edan-search/collection_search%3Fedan_q%3Dgraduation%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Portrait of John Brown',
+  imageUrl:'./images/Capture134.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.77.4?destination=edan-search/collection_search%3Fedan_q%3Djohn%2520brown%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Panoramic photographic print of D Company, 369th regiment at Camp Merritt',
+  imageUrl:'./images/Capture135.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.108.1?destination=edan-search/collection_search%3Fedan_q%3Dpanoramic%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Panoramic photograph of workers outside the Grendel Textile Mill',
+  imageUrl:'./images/Capture136.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2012.92?destination=edan-search/collection_search%3Fedan_q%3Dpanoramic%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Film still for The Emperor Jones',
+  imageUrl:'./images/Capture137.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.118.165.4?destination=edan-search/collection_search%3Fedan_q%3Dfilm%2520still%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Film still for Cabin in the Sky',
+  imageUrl:'./images/Capture138.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.118.160.5?destination=edan-search/collection_search%3Fedan_q%3Dfilm%2520still%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Postcard of men branding a cow',
+  imageUrl:'./images/Capture139.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.35.13?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dpostcard%2520of%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Postcard of two men posing in a Western scene in a photography studio',
+  imageUrl:'./images/Capture140.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.35.15?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dpostcard%2520of%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Postcard of a man posing in a Western scene in a photography studio',
+  imageUrl:'./images/Capture141.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.35.21?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dpostcard%2520of%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Postcard of a young man wearing a suit and bow tie',
+  imageUrl:'./images/Capture142.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.5.2.13?destination=edan-search/collection_search%3Fedan_q%3Dpostcard%2520of%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Postcard of soldiers inspecting horses',
+  imageUrl:'./images/Capture143.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.35.14?destination=edan-search/collection_search%3Fedan_q%3Dpostcard%2520of%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Framed panoramic photograph of M Company, 365th Infantry, 183d Brigade',
+  imageUrl:'./images/Capture144.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.13.3.3ab?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dframed%252Bpanoramic"
+  },
+  
+  {sentence:'Framed panoramic photograph of Camp Grant officers',
+  imageUrl:'./images/Capture145.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.13.3.2ab?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dframed%252Bpanoramic"
+  },
+  
+  {sentence:'Framed panoramic photograph of 183d Brigade of the 92d Infantry Division',
+  imageUrl:'./images/Capture146.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.13.3.1ab?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dframed%252Bpanoramic"
+  },
+  
+  {sentence:'Framed photograph of unidentified WWI soldier',
+  imageUrl:'./images/Capture147.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2017.111.20.1ab?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dframed%252Bunidentified%252Bsoldier"
+  },
+  
+  {sentence:'Framed photograph of an unidentified WWI sailor',
+  imageUrl:'./images/Capture148.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2017.111.20.2ab?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dframed%252Bunidentified%252Bsailor"
+  },
+  
+  {sentence:'Stereograph of deceased soldiers on the battlefield after Gettysburg',
+  imageUrl:'./images/Capture149.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.222.19?destination=edan-search/collection_search%3Fedan_q%3Dstereograph%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Stereograph of deceased Confederate soldiers near a fence at Antietam, Maryland',
+  imageUrl:'./images/Capture150.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.222.20?destination=edan-search/collection_search%3Fedan_q%3Dstereograph%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Stereograph of a deceased Confederate soldier in a trench',
+  imageUrl:'./images/Capture151.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.222.14?destination=edan-search/collection_search%3Fedan_q%3Dstereograph%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Stereograph of a deceased soldier on the battlefield after Gettysburg',
+  imageUrl:'./images/Capture152.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.222.17?destination=edan-search/collection_search%3Fedan_q%3Dstereograph%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Stereograph of people picking cotton in a field',
+  imageUrl:'./images/Capture153.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.166.8?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dstereograph%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Stereograph of two deceased Confederate soldiers in a trench',
+  imageUrl:'./images/Capture154.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.222.15?destination=edan-search/collection_search%3Fedan_q%3Dstereograph%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Stereograph card of of an unidentified woman',
+  imageUrl:'./images/Capture155.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.46.29.7?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dstereograph%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Daguerreotype of a man taken by Augustus Washington',
+  imageUrl:'./images/Capture156.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.52.1?destination=edan-search/collection_search%3Fedan_q%3Ddaguerreotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Daguerreotype of a man in paisley vest',
+  imageUrl:'./images/Capture157.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2008.9.15?destination=edan-search/collection_search%3Fedan_q%3Ddaguerreotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Daguerreotype of a boy holding a white baby',
+  imageUrl:'./images/Capture158.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.37?destination=edan-search/collection_search%3Fedan_q%3Ddaguerreotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Daguerreotype of a woman with a child on her lap',
+  imageUrl:'./images/Capture159.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.155.146?destination=edan-search/collection_search%3Fedan_q%3Ddaguerreotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Daguerreotype of a young woman',
+  imageUrl:'./images/Capture160.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.16?destination=edan-search/collection_search%3Fedan_q%3Ddaguerreotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Daguerreotype of Rhoda Phillips',
+  imageUrl:'./images/Capture161.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.34?destination=edan-search/collection_search%3Fedan_q%3Ddaguerreotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Daguerreotype of William Lloyd Garrison',
+  imageUrl:'./images/Capture162.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.115.10?destination=edan-search/collection_search%3Fedan_q%3Ddaguerreotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Print of Cab Calloway dancing at the Hotel Nacional de Cuba',
+  imageUrl:'./images/Capture163.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.237.6?destination=edan-search/collection_search%3Fedan_q%3Dcab%2520calloway%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Print of Cab Calloway and dancers performing',
+  imageUrl:'./images/Capture164.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.237.16?destination=edan-search/collection_search%3Fedan_q%3Dcab%2520calloway%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Print of Cab Calloway and his band performing on stage',
+  imageUrl:'./images/Capture165.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.237.9?destination=edan-search/collection_search%3Fedan_q%3Dcab%2520calloway%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Print of Cab Calloway looking out a window',
+  imageUrl:'./images/Capture166.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.237.17?destination=edan-search/collection_search%3Fedan_q%3Dcab%2520calloway%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Print of Cab Calloway with his band and dancers onstage at the Cotton Club',
+  imageUrl:'./images/Capture167.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.237.12?destination=edan-search/collection_search%3Fedan_q%3Dcab%2520calloway%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Print of Cab Calloway in checked suit standing in front of microphone',
+  imageUrl:'./images/Capture168.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.237.11?destination=edan-search/collection_search%3Fedan_q%3Dcab%2520calloway%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Print of Cab Calloway conducting his band with a large audience visible',
+  imageUrl:'./images/Capture169.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.237.13?destination=edan-search/collection_search%3Fedan_q%3Dcab%2520calloway%26edan_local%3D1%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522"
+  },
+  
+  {sentence:'Ambrotype of an unidentified woman and child',
+  imageUrl:'./images/Capture170.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.51.11?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of an unidentified young woman',
+  imageUrl:'./images/Capture171.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.174.6?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of a young woman holding two white children',
+  imageUrl:'./images/Capture172.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2008.9.7?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of a young woman holding a white baby',
+  imageUrl:'./images/Capture173.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2008.9.5?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of a woman seated with a hat in her lap',
+  imageUrl:'./images/Capture174.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2008.9.1?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of a man',
+  imageUrl:'./images/Capture175.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2008.9.11?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of a Civil War soldier',
+  imageUrl:'./images/Capture176.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2008.9.2?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of a white baby being held by a man',
+  imageUrl:'./images/Capture177.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2008.9.3?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of Frederick Douglass',
+  imageUrl:'./images/Capture178.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.36.10ab?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of Ann Hurst Copeland in an embossed leather case',
+  imageUrl:'./images/Capture179.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.174.7.1ab?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of Elisa Greenwell with handwritten note',
+  imageUrl:'./images/Capture180.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.97.4ab?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of Qualls Tibbs, 5th Sergeant, 27th U.S.C.T., Camp Delaware, Ohio',
+  imageUrl:'./images/Capture181.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.4.2ab?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Ambrotype of three women in dotted calico dresses',
+  imageUrl:'./images/Capture182.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.174.10ab?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
 ]
 
-var scrapbook_data = [
-{"id": 0, "value": "Scrapbook", "parent": -1},
-{"id": 1, "value": "fragment with five pictures adhered to it", "parent": 0},
-{"id": 2, "value": "page about the Wiley College Debate Team", "parent": 0}
+const treeData=[
+  {photograph : [
+  {"id": 0, "value": "Photograph", "parent": -1},
+  {"id": 1, "value": "of", "parent": 0},
+  {"id": 2, "value": "album", "parent": 0},
+  {"id": 3, "value": "portrait of", "parent": 0},
+  {"id": 4, "value": "a man with a mustache wearing a suit", "parent": 0},
+  {"id": 5, "value": "for The Emperor Jones", "parent": 0},
+  {"id": 6, "value": "postcard of the Jenkins Orphanage Band, Charleston, South Carolina", "parent": 0},
+  {"id": 7, "value": "carte-de-visite of R.T. Greener", "parent": 0},
+  {"id": 8, "value": "a", "parent": 1},
+  {"id": 9, "value": "the", "parent": 1},
+  {"id": 10, "value": "young man standing next to a wicker chair", "parent": 1},
+  {"id": 11, "value": "Ollie Hadley", "parent": 1},
+  {"id": 12, "value": "three", "parent": 1},
+  {"id": 13, "value": "two", "parent": 1},
+  {"id": 14, "value": "Fitz Lee", "parent": 1},
+  {"id": 15, "value": "an unidentified man", "parent": 1},
+  {"id": 16, "value": "Cpl . Lawrence", "parent": 1},
+  {"id": 17, "value": "Lena Horne in profile", "parent": 1},
+  {"id": 18, "value": "Regina Egertion Wright with Colored Training School diploma", "parent": 1},
+  {"id": 19, "value": "Jim Europes 369th Infantry Harlem Hellfighters Brass Band", "parent": 1},
+  {"id": 20, "value": "Lucille Brown", "parent": 1},
+  {"id": 22, "value": "Maggie Hickman in a cap and gown", "parent": 1},
+  {"id": 23, "value": "Theo Lane", "parent": 1},
+  {"id": 24, "value": "James Lane firing a gun on the deck of the USS Indianapolis", "parent": 1},
+  {"id": 25, "value": "Bosey E. Vick", "parent": 1},
+  {"id": 26, "value": "Erskine Hawkins", "parent": 1},
+  {"id": 27, "value": "World War", "parent": 1},
+  {"id": 28, "value": "unidentified woman wearing French Antillean dress", "parent": 1},
+  {"id": 29, "value": "theatre production with blackface actors and Oliver Howard Horner", "parent": 1},
+  {"id": 30, "value": "Tobe Brown", "parent": 1},
+  {"id": 31, "value": "Pearl Bailey", "parent": 1},
+  {"id": 32, "value": "Sammy Davis Jr .", "parent": 1},
+  {"id": 33, "value": "Lollaretta Pemberton", "parent": 1},
+  {"id": 34, "value": "B.C. Franklin", "parent": 1},
+  {"id": 35, "value": "Billie Holiday", "parent": 1},
+  {"id": 36, "value": "Mattie Jones", "parent": 1},
+  {"id": 37, "value": "Hall Johnson and the Negro String Quartet", "parent": 1},
+  {"id": 38, "value": "North Greenwood Avenue in Tulsa , Oklahoma", "parent": 1},
+  {"id": 39, "value": "schoolchildren and teachers", "parent": 1},
+  {"id": 40, "value": "Aaron Molyneaux Hewlett , gymnasium coach of Harvard University", "parent": 1},
+  {"id": 41, "value": "Amos Harper off to school", "parent": 1},
+  {"id": 42, "value": "Tom Durr standing next to a chair with a hat on it", "parent": 1},
+  {"id": 43, "value": "people standing in a line on a street in Tulsa , Oklahoma", "parent": 1},
+  {"id": 44, "value": "Senator Henry Hall Falkener and family", "parent": 1},
+  {"id": 45, "value": "Mary Lou Williams playing piano with Andy Kirk and his orchestra", "parent": 1},
+  {"id": 46, "value": "Larby Smith standing next to a wicker chair .", "parent": 1},
+  {"id": 47, "value": "E. G. Humphrey wearing a suit", "parent": 1},
+  {"id": 48, "value": "Jimmie Lunceford", "parent": 1},
+  {"id": 49, "value": "Marion Durr wearing a shirt and vest", "parent": 1},
+  {"id": 50, "value": "integrated American Expeditionary Forces in France", "parent": 1},
+  {"id": 51, "value": "Kappa Alpha Psi members", "parent": 1},
+  {"id": 52, "value": "members of the 55th Massachusetts Infantry", "parent": 1},
+  {"id": 53, "value": "Bessie Durr in a white dress", "parent": 1},
+  {"id": 54, "value": "Dr . William H. Conner and family outside their home", "parent": 1},
+  {"id": 55, "value": "men", "parent": 1},
+  {"id": 56, "value": "Lucius Harper , Jr . off to school", "parent": 1},
+  {"id": 57, "value": "Chase County High School (Kansas) baseball team", "parent": 1},
+  {"id": 58, "value": "Malenda Polk wearing a white , high collar dress .", "parent": 1},
+  {"id": 59, "value": "man", "parent": 8},
+  {"id": 60, "value": "Buffalo Soldier holding a pair of gloves", "parent": 8},
+  {"id": 61, "value": "woman", "parent": 8},
+  {"id": 62, "value": "bearded man wearing a dark colored suit jacket", "parent": 8},
+  {"id": 63, "value": "young", "parent": 8},
+  {"id": 64, "value": "toddler standing on a wicker chair", "parent": 8},
+  {"id": 65, "value": "girl", "parent": 8},
+  {"id": 66, "value": "hunting party", "parent": 8},
+  {"id": 67, "value": "baby", "parent": 8},
+  {"id": 68, "value": "couple standing behind a chair", "parent": 8},
+  {"id": 69, "value": "staged sword duel", "parent": 8},
+  {"id": 70, "value": "Guilford County school bus and school children", "parent": 8},
+  {"id": 71, "value": "Knoxville College glee club", "parent": 9},
+  {"id": 72, "value": "Greenwood district of Tulsa , Oklahoma", "parent": 9},
+  {"id": 73, "value": "Cotten family", "parent": 9},
+  {"id": 74, "value": "John H. Scott family home", "parent": 9},
+  {"id": 75, "value": "children , a white cat , a woman and a man", "parent": 12},
+  {"id": 76, "value": "women standing behind a seated man", "parent": 12},
+  {"id": 77, "value": "girls", "parent": 13},
+  {"id": 78, "value": "men", "parent": 13},
+  {"id": 80, "value": "young girls", "parent": 13},
+  {"id": 81, "value": "in front of car", "parent": 15},
+  {"id": 82, "value": "holding a saber", "parent": 15},
+  {"id": 83, "value": "Leslie McVey", "parent": 16},
+  {"id": 84, "value": "McVey in uniform wearing the Croix de Guerre medal", "parent": 16},
+  {"id": 85, "value": "among Poro agents and one small child", "parent": 20},
+  {"id": 86, "value": "and Elder Brown among others", "parent": 20},
+  {"id": 87, "value": "II soldiers from Company D , 8th Battalion , Ft . Belvoir", "parent": 27},
+  {"id": 88, "value": "I soldiers", "parent": 27},
+  {"id": 89, "value": "and unidentified men in Ardmore , Oklahoma", "parent": 34},
+  {"id": 92, "value": "running with a football in front of two houses", "parent": 55},
+  {"id": 93, "value": "herding cattle in a field", "parent": 55},
+  {"id": 94, "value": "wearing a", "parent": 59},
+  {"id": 95, "value": "in", "parent": 59},
+  {"id": 96, "value": "and", "parent": 59},
+  {"id": 97, "value": "with a", "parent": 59},
+  {"id": 98, "value": "sitting down with a woman standing next to him", "parent": 59},
+  {"id": 102, "value": "wearing a", "parent": 61},
+  {"id": 103, "value": "in", "parent": 61},
+  {"id": 104, "value": "holding a", "parent": 61},
+  {"id": 105, "value": "sitting", "parent": 61},
+  {"id": 106, "value": "standing", "parent": 61},
+  {"id": 107, "value": "man in a dark colored suit", "parent": 63},
+  {"id": 109, "value": "couple in Texas", "parent": 63},
+  {"id": 110, "value": "reading", "parent": 65},
+  {"id": 111, "value": "wearing a pleated dress", "parent": 65},
+  {"id": 112, "value": "sitting in a chair", "parent": 67},
+  {"id": 113, "value": "dressed in white and sitting in a chair", "parent": 67},
+  {"id": 114, "value": "wearing dark colored clothing sitting in a chair", "parent": 67},
+  {"id": 115, "value": "suit", "parent": 94},
+  {"id": 116, "value": "light colored jacket , vest and necktie", "parent": 94},
+  {"id": 117, "value": "dark colored suit with a pocket watch in his vest", "parent": 94},
+  {"id": 118, "value": "a", "parent": 95},
+  {"id": 120, "value": "a woman", "parent": 96},
+  {"id": 121, "value": "woman", "parent": 96},
+  {"id": 122, "value": "goatee and a dark colored suit", "parent": 97},
+  {"id": 123, "value": "mustache wearing a dark jacket", "parent": 97},
+  {"id": 124, "value": "beard wearing a dark colored suit and vest", "parent": 97},
+  {"id": 126, "value": "jacket and necktie", "parent": 115},
+  {"id": 127, "value": "and necktie", "parent": 115},
+  {"id": 128, "value": "suit ,", "parent": 118},
+  {"id": 129, "value": "dark colored jacket", "parent": 118},
+  {"id": 130, "value": "in", "parent": 121},
+  {"id": 131, "value": "sitting outside of a storefront", "parent": 121},
+  {"id": 132, "value": "standing on a sidewalk", "parent": 121},
+  {"id": 135, "value": "vest and necktie", "parent": 128},
+  {"id": 136, "value": "leaning on a cane and holding a hat", "parent": 128},
+  {"id": 137, "value": "formal clothes", "parent": 130},
+  {"id": 138, "value": "front of car", "parent": 130},
+  {"id": 142, "value": "dark colored dress and glasses", "parent": 102},
+  {"id": 143, "value": "white dress with a dark colored collar", "parent": 102},
+  {"id": 144, "value": "dress decorated with lace", "parent": 102},
+  {"id": 146, "value": "a", "parent": 103},
+  {"id": 147, "value": "profile", "parent": 103},
+  {"id": 148, "value": "white dress", "parent": 146},
+  {"id": 149, "value": "black dress holding a guitar", "parent": 146},
+  {"id": 150, "value": "dark dress and a girl in a white dress", "parent": 146},
+  {"id": 151, "value": "light colored dress with a frilled collar", "parent": 146},
+  {"id": 152, "value": "standing next to a chair", "parent": 148},
+  {"id": 153, "value": "with black ribbons on the left side", "parent": 148},
+  {"id": 154, "value": "parasol", "parent": 104},
+  {"id": 155, "value": "closed parasol", "parent": 104},
+  {"id": 156, "value": "in a", "parent": 105},
+  {"id": 157, "value": "with her legs crossed", "parent": 105},
+  {"id": 158, "value": "wicker chair", "parent": 156},
+  {"id": 159, "value": "chair , holding a book", "parent": 156},
+  {"id": 160, "value": "and a woman sitting", "parent": 106},
+  {"id": 161, "value": "next to a chair and holding a book", "parent": 106},
+  {"id": 162, "value": "on the porch of a house", "parent": 106},
+  {"id": 163, "value": "standing in front of a door", "parent": 77},
+  {"id": 164, "value": "wearing white", "parent": 77},
+  {"id": 165, "value": "and", "parent": 78},
+  {"id": 166, "value": "linking arms", "parent": 78},
+  {"id": 167, "value": "three women .", "parent": 165},
+  {"id": 168, "value": "two women", "parent": 165},
+  {"id": 169, "value": "on the beach", "parent": 83},
+  {"id": 170, "value": "with his son , Lawrence McVey Jr .", "parent": 83},
+  {"id": 171, "value": "a", "parent": 3},
+  {"id": 172, "value": "Samuel Grant", "parent": 3},
+  {"id": 173, "value": "woman in a black dress", "parent": 171},
+  {"id": 174, "value": "man dressed as a cowboy", "parent": 171},
+  {"id": 175, "value": "page with three photographs of women in Tulsa , Oklahoma", "parent": 2},
+  {"id": 176, "value": "owned by Emily Howland", "parent": 2},
+  {"id": 177, "value": "of 25th Regiment USCT soldiers owned by William A. Prickitt", "parent": 2}
+  ]},
+  {scrapbook : [
+  {"id": 0, "value": "Scrapbook", "parent": -1},
+  {"id": 1, "value": "fragment with five pictures adhered to it", "parent": 0},
+  {"id": 2, "value": "page about the Wiley College Debate Team", "parent": 0}
+  ]},
+  {portrait : [
+  {"id": 0, "value": "Portrait of", "parent": -1},
+  {"id": 1, "value": "a woman in graduation attire", "parent": 0},
+  {"id": 2, "value": "John Brown", "parent": 0}
+  ]},
+  {panoramic : [
+  {"id": 0, "value": "Panoramic", "parent": -1},
+  {"id": 1, "value": "photographic print of D Company, 369th regiment at Camp Merritt", "parent": 0},
+  {"id": 2, "value": "photograph of workers outside the Grendel Textile Mill", "parent": 0}
+  ]},
+  {film : [
+  {"id": 0, "value": "Film still for", "parent": -1},
+  {"id": 1, "value": "The Emperor Jones", "parent": 0},
+  {"id": 2, "value": "Cabin in the Sky", "parent": 0}
+  ]},
+  {postcard : [
+  {"id": 0, "value": "Postcard of", "parent": -1},
+  {"id": 1, "value": "men branding a cow", "parent": 0},
+  {"id": 2, "value": "two men posing in a Western scene in a photography studio", "parent": 0},
+  {"id": 3, "value": "a", "parent": 0},
+  {"id": 4, "value": "soldiers inspecting horses", "parent": 0},
+  {"id": 5, "value": "man posing in a Western scene in a photography studio", "parent": 3},
+  {"id": 6, "value": "young man wearing a suit and bow tie", "parent": 3}
+  ]},
+  {framed : [
+  {"id": 0, "value": "Framed", "parent": -1},
+  {"id": 1, "value": "panoramic photograph of", "parent": 0},
+  {"id": 2, "value": "photograph of", "parent": 0},
+  {"id": 3, "value": "M Company, 365th Infantry, 183d Brigade", "parent": 1},
+  {"id": 4, "value": "Camp Grant officers", "parent": 1},
+  {"id": 5, "value": "183d Brigade of the 92d Infantry Division", "parent": 1},
+  {"id": 6, "value": "unidentified WWI soldier", "parent": 2},
+  {"id": 7, "value": "an unidentified WWI sailor", "parent": 2}
+  ]},
+  {stereograph : [
+  {"id": 0, "value": "Stereograph", "parent": -1},
+  {"id": 1, "value": "of", "parent": 0},
+  {"id": 2, "value": "card of of an unidentified woman", "parent": 0},
+  {"id": 3, "value": "deceased", "parent": 1},
+  {"id": 4, "value": "a deceased", "parent": 1},
+  {"id": 5, "value": "people picking cotton in a field", "parent": 1},
+  {"id": 6, "value": "two deceased Confederate soldiers in a trench", "parent": 1},
+  {"id": 7, "value": "soldiers on the battlefield after Gettysburg", "parent": 3},
+  {"id": 8, "value": "Confederate soldiers near a fence at Antietam, Maryland", "parent": 3},
+  {"id": 9, "value": "Confederate soldier in a trench", "parent": 4},
+  {"id": 10, "value": "soldier on the battlefield after Gettysburg", "parent": 4}
+  ]},
+  {daguerreotype : [
+  {"id": 0, "value": "Daguerreotype of", "parent": -1},
+  {"id": 1, "value": "a", "parent": 0},
+  {"id": 2, "value": "Rhoda Phillips", "parent": 0},
+  {"id": 3, "value": "William Lloyd Garrison", "parent": 0},
+  {"id": 4, "value": "man", "parent": 1},
+  {"id": 5, "value": "boy holding a white baby", "parent": 1},
+  {"id": 6, "value": "woman with a child on her lap", "parent": 1},
+  {"id": 7, "value": "young woman", "parent": 1},
+  {"id": 8, "value": "taken by Augustus Washington", "parent": 4},
+  {"id": 9, "value": "in paisley vest", "parent": 4}
+  ]},
+  {print : [
+  {"id": 0, "value": "Print of Cab Calloway", "parent": -1},
+  {"id": 1, "value": "dancing at the Hotel Nacional de Cuba", "parent": 0},
+  {"id": 2, "value": "and", "parent": 0},
+  {"id": 3, "value": "looking out a window", "parent": 0},
+  {"id": 4, "value": "with his band and dancers onstage at the Cotton Club", "parent": 0},
+  {"id": 5, "value": "in checked suit standing in front of microphone", "parent": 0},
+  {"id": 6, "value": "conducting his band with a large audience visible", "parent": 0},
+  {"id": 7, "value": "dancers performing", "parent": 2},
+  {"id": 8, "value": "his band performing on stage", "parent": 2},
+  ]},
+  {ambrotype : [
+  {"id": 0, "value": "Ambrotype of", "parent": -1},
+  {"id": 1, "value": "an unidentified", "parent": 0},
+  {"id": 2, "value": "a", "parent": 0},
+  {"id": 3, "value": "Frederick Douglass", "parent": 0},
+  {"id": 4, "value": "Ann Hurst Copeland in an embossed leather case", "parent": 0},
+  {"id": 5, "value": "Elisa Greenwell with handwritten note", "parent": 0},
+  {"id": 6, "value": "Qualls Tibbs, 5th Sergeant, 27th U.S.C.T., Camp Delaware, Ohio", "parent": 0},
+  {"id": 7, "value": "three women in dotted calico dresses", "parent": 0},
+  {"id": 8, "value": "woman and child", "parent": 1},
+  {"id": 9, "value": "young woman", "parent": 1},
+  {"id": 10, "value": "young woman holding", "parent": 2},
+  {"id": 11, "value": "woman seated with a hat in her lap", "parent": 2},
+  {"id": 12, "value": "man", "parent": 2},
+  {"id": 13, "value": "Civil War soldier", "parent": 2},
+  {"id": 14, "value": "white baby being held by a man", "parent": 2},
+  {"id": 15, "value": "two white children", "parent": 10},
+  {"id": 16, "value": "a white baby", "parent": 10}
+  ]},
 ]
+ 
+$(document).ready(function(){
+  let treeType=window.localStorage.getItem("treeType");
+  console.log(treeType)
+  if(treeType==null){
+    treeType=$("#typeSelect").find(":selected").val();
+  }
+  $('#typeSelect').val(treeType);
+  console.log(treeType)
+  drawTree(treeType);
+  hideImage();
+})
 
+const drawTree=(treeType)=>{
+  let currentTree=[];
+  treeData.map(treeObj=>{
+     if(Object.keys(treeObj)[0]==treeType){
+       currentTree=Object.values(treeObj)[0];
+     }
+  })
+ //Create data tree
+  console.log(currentTree);
+ var tableData = anychart.data.tree(currentTree, 'as-table');
+ //console.log(tableData);
+ // Create wordtree chart
 
-//Create data tree
-var tableData = anychart.data.tree(photograph_data, 'as-table');
+ var chart = anychart.wordtree(tableData);
+ // Set the container id
 
-// Create wordtree chart
-var chart = anychart.wordtree(tableData);
-  
-// Set the container id
-chart.container("vis");
-  
-// Configure the maximum font size
-chart.maxFontSize(50);
-  
-// Set chart's minimum font size
-chart.minFontSize(4);
-  
-// Set font family name.
-chart.fontFamily('Garamond');
-
-// Initiate drawing the chart
-chart.draw();
-
-// drill up a level
-function drillUpALevel() {
-  chart.drillUp();
+ if($('#vis').children().length!=0){
+   chart.remove();
+  $('#vis').empty();
+ }
+ chart.container("vis");
+ // Configure the maximum font size
+ chart.maxFontSize(35);
+ // Set chart's minimum font size
+ chart.minFontSize(4);
+ // Set font family name.
+ chart.fontFamily('Garamond');
+ // Initiate drawing the chart
+ chart.draw();
+ if(window.localStorage.getItem("treeType")){
+     window.localStorage.removeItem("treeType");
+  }
 }
 
-// Set the root word
-//chart.word("Photograph");
-  
-// Change the root word based on dropdown menu
-function switchType() {
-  var select = document.getElementById("typeSelect");
-  chart.word(select.value);
-}
+$("#typeSelect").on('change',function(){
+  hideImage();
+  const treeType=$("#typeSelect").find(":selected").val();
+  window.localStorage.setItem("treeType",treeType);
+  window.location.reload();
+})
 
-// Disable tooltip for all series
-//chart.tooltip(false);
+
 $("#vis").click(function() {
+  hideImage();
   const nodes = $("[data-ac-wrapper-id='7'] text").children();
   console.log("starting all over");
   let sentence = '';
+
   if(nodes) {
     console.log(nodes)
     for(let i=0;i<nodes.length;i++) {
@@ -241,25 +1196,28 @@ $("#vis").click(function() {
     }
     
     sentence = sentence.trim();
-    
-    if(sentence=="Photograph a man with a mustache wearing a suit") {
-      window.open("https://nmaahc.si.edu/object/nmaahc_2016.5.2.54?destination=edan-search/collection_search%3Fedan_q%3Dmustache%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522")
-    }
-    else if(sentence=="Photograph for The Emperor Jones") {
-      window.open("https://nmaahc.si.edu/object/nmaahc_2013.118.165.1?destination=edan-search/collection_search%3Fedan_q%3Demperor%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522")
-    }
-    else if(sentence=="Photograph postcard of the Jenkins Orphanage Band, Charleston, South Carolina") {
-      window.open("https://nmaahc.si.edu/object/nmaahc_2014.63.88.1?destination=edan-search/collection_search%3Fedan_q%3Djenkins%26edan_local%3D1%26edan_fq%255B0%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522")
-    }
-    else if(sentence=="Photograph carte-de-visite of R.T. Greener") {
-      window.open("https://nmaahc.si.edu/object/nmaahc_2018.105.23?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dgreener")
-    }
-    else if(sentence=="Photograph of young man standing next to a wicker chair") {
-      window.open("https://nmaahc.si.edu/object/nmaahc_2016.5.2.12?destination=edan-search/collection_search%3Fedan_local%3D1%26edan_q%3Dwicker")
-    }
+    sentenceData.map(sentenceObj=>{
+      if(sentenceObj.sentence==sentence){
+        console.log(true);
+        setImage(sentenceObj);
+        showImage();
+      }
+    })
     console.log(sentence);
+    
   }
 })
+const setImage=(imgObj)=>{
+  $('#imageCard img').attr("src",imgObj.imageUrl);
+  $('#imageCard img').attr("href",imgObj.viewSource);
+  $('#imageCard a').attr("href",imgObj.viewSource);
+}
+const showImage=()=>{
+  $('#imageCard').css("transform","translateY(-50%)");
+}
+const hideImage=()=>{
+  $('#imageCard').css("transform","translateX(150%)");
+}
 
 window.addEventListener('scroll', function () {
   const parallax = document.querySelector('.parallax');
@@ -279,5 +1237,3 @@ function parallax (e) {
   });
   
 };
-
-//});
