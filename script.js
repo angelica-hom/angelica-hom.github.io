@@ -864,6 +864,181 @@ const sentenceData=[
   imageUrl:'./images/Capture182.png',
   viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.174.10ab?destination=edan-search/collection_search%3Fedan_q%3Dambrotype%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
   },
+  
+  {sentence:'Albumen print of Millie and Christine McCoy',
+  imageUrl:'./images/Capture183.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.46.29.119?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of an unidentified woman sitting on stairs',
+  imageUrl:'./images/Capture184.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.46.29.114?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of mebers of the Grand United Order of Odd Fellows',
+  imageUrl:'./images/Capture185.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.89.6?destination=edan-search/collection_search%3Fpage%3D6%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of a man with a full hay cart',
+  imageUrl:'./images/Capture186.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.166.9?destination=edan-search/collection_search%3Fpage%3D3%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of a man with moustache',
+  imageUrl:'./images/Capture187.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2008.9.18?destination=edan-search/collection_search%3Fpage%3D6%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of a woman and two children in front of a log house in Georgia',
+  imageUrl:'./images/Capture188.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.43.20?destination=edan-search/collection_search%3Fpage%3D2%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of African American Odd Fellows in front of a grandstand',
+  imageUrl:'./images/Capture189.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.89.7?destination=edan-search/collection_search%3Fpage%3D6%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of three members of the Boyd family',
+  imageUrl:'./images/Capture190.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.89.3ab?destination=edan-search/collection_search%3Fpage%3D6%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of four men indoors',
+  imageUrl:'./images/Capture191.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.89.5?destination=edan-search/collection_search%3Fpage%3D6%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of enslaved women and their children near Alexandria, Virginia',
+  imageUrl:'./images/Capture192.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.174.8?destination=edan-search/collection_search%3Fpage%3D4%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of men, women, and children picking cotton in South Carolina',
+  imageUrl:'./images/Capture193.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2008.9.22?destination=edan-search/collection_search%3Fpage%3D7%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of Rev. Nelson W. Jordan',
+  imageUrl:'./images/Capture194.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.63.102.33?destination=edan-search/collection_search%3Fpage%3D4%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen print of Harriet Tubman',
+  imageUrl:'./images/Capture195.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2009.50.2?destination=edan-search/collection_search%3Fpage%3D6%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen Print of the congregation of St. Nicholas Church in Maryland',
+  imageUrl:'./images/Capture196.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.43.19?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen portrait of Fanny Seward mounted on paper',
+  imageUrl:'./images/Capture197.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2017.30.45?destination=edan-search/collection_search%3Fedan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Albumen portrait of Charlotte S. Poulton mounted on paper',
+  imageUrl:'./images/Capture198.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2017.30.19?destination=edan-search/collection_search%3Fpage%3D3%26edan_q%3Dalbumen%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of an unidentified woman photographed by J. P. Ball & Son',
+  imageUrl:'./images/Capture199.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.37.28.53?destination=edan-search/collection_search%3Fpage%3D4%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of an unidentified woman wearing a top hat and a fur stole',
+  imageUrl:'./images/Capture200.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2016.111.10?destination=edan-search/collection_search%3Fpage%3D4%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of an unidentified girl',
+  imageUrl:'./images/Capture201.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2009.31.20?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of an unidentified member of the Vass family',
+  imageUrl:'./images/Capture202.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.94.1?destination=edan-search/collection_search%3Fpage%3D3%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of Buffalo soldier wearing buffalo coat',
+  imageUrl:'./images/Capture203.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2020.10.1?destination=edan-search/collection_search%3Fpage%3D1%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of Sarah Ann Blunt Crozely',
+  imageUrl:'./images/Capture204.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.49.5?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of Sarah Ann Blunt Crozley',
+  imageUrl:'./images/Capture205.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2010.49.1?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of Sojourner Truth',
+  imageUrl:'./images/Capture206.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2013.207.1?destination=edan-search/collection_search%3Fpage%3D4%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of a woman',
+  imageUrl:'./images/Capture207.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.155.76.5?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of a Buffalo soldier from Co. G 25th Regiment',
+  imageUrl:'./images/Capture208.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.105.22?destination=edan-search/collection_search%3Fpage%3D3%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of a newspaper carrier',
+  imageUrl:'./images/Capture209.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.155.65?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of John H. Scott',
+  imageUrl:'./images/Capture210.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2014.94.2?destination=edan-search/collection_search%3Fpage%3D3%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of Mary Jane Hale Welles in a funeral dress by Elizabeth Keckley',
+  imageUrl:'./images/Capture211.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.35.2.2?destination=edan-search/collection_search%3Fpage%3D2%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of Frederick Douglass with his grandson, Joseph Douglass',
+  imageUrl:'./images/Capture212.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_A2010.26.29.8.1?destination=edan-search/collection_search%3Fpage%3D2%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of Rev. G.H.S. Bell',
+  imageUrl:'./images/Capture213.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2009.31.7?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of Susan Bell',
+  imageUrl:'./images/Capture214.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2009.31.8?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card of Col. Charles Young as a cadet at West Point',
+  imageUrl:'./images/Capture215.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2011.57.21?destination=edan-search/collection_search%3Fpage%3D5%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card portrait of John R. Bell',
+  imageUrl:'./images/Capture216.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2018.43.7?destination=edan-search/collection_search%3Fpage%3D2%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
+  
+  {sentence:'Cabinet card portrait of Thomas Mundy Peterson',
+  imageUrl:'./images/Capture217.png',
+  viewSource:"https://nmaahc.si.edu/object/nmaahc_2015.190?destination=edan-search/collection_search%3Fpage%3D4%26edan_q%3Dcabinet%2520card%26edan_fq%255B0%255D%3Dobject_type%253A%2522Photographs%2522%26edan_fq%255B1%255D%3Dp.edanmdm.descriptivenonrepeating.online_media.media.usage.access%253A%2522CC0%2522%26edan_local%3D1"
+  },
 ]
 
 const treeData=[
@@ -1124,6 +1299,57 @@ const treeData=[
   {"id": 14, "value": "white baby being held by a man", "parent": 2},
   {"id": 15, "value": "two white children", "parent": 10},
   {"id": 16, "value": "a white baby", "parent": 10}
+  ]},
+  {albumen : [
+  {"id": 0, "value": "Albumen", "parent": -1},
+  {"id": 1, "value": "print of", "parent": 0},
+  {"id": 2, "value": "Print of the congregation of St. Nicholas Church in Maryland", "parent": 0},
+  {"id": 3, "value": "portrait of", "parent": 0},
+  {"id": 4, "value": "Millie and Christine McCoy", "parent": 1},
+  {"id": 5, "value": "an unidentified woman sitting on stairs", "parent": 1},
+  {"id": 6, "value": "mebers of the Grand United Order of Odd Fellows", "parent": 1},
+  {"id": 7, "value": "a", "parent": 1},
+  {"id": 8, "value": "African American Odd Fellows in front of a grandstand", "parent": 1},
+  {"id": 9, "value": "three members of the Boyd family", "parent": 1},
+  {"id": 10, "value": "four men indoors", "parent": 1},
+  {"id": 11, "value": "enslaved women and their children near Alexandria, Virginia", "parent": 1},
+  {"id": 12, "value": "men, women, and children picking cotton in South Carolina", "parent": 1},
+  {"id": 13, "value": "Rev. Nelson W. Jordan", "parent": 1},
+  {"id": 14, "value": "Harriet Tubman", "parent": 1},
+  {"id": 15, "value": "man with", "parent": 7},
+  {"id": 16, "value": "woman and two children in front of a log house in Georgia", "parent": 7},
+  {"id": 17, "value": "a full hay cart", "parent": 15},
+  {"id": 18, "value": "moustache", "parent": 15},
+  {"id": 19, "value": "Fanny Seward mounted on paper", "parent": 3},
+  {"id": 20, "value": "Charlotte S. Poulton mounted on paper", "parent": 3}
+  ]},
+  {cabinet : [
+  {"id": 0, "value": "Cabinet card", "parent": -1},
+  {"id": 1, "value": "of", "parent": 0},
+  {"id": 2, "value": "portrait of", "parent": 0},
+  {"id": 3, "value": "an unidentified", "parent": 1},
+  {"id": 4, "value": "Buffalo soldier wearing buffalo coat", "parent": 1},
+  {"id": 5, "value": "Sarah Ann Blunt", "parent": 1},
+  {"id": 6, "value": "Sojourner Truth", "parent": 1},
+  {"id": 7, "value": "a", "parent": 1},
+  {"id": 8, "value": "John H. Scott", "parent": 1},
+  {"id": 9, "value": "Mary Jane Hale Welles in a funeral dress by Elizabeth Keckley", "parent": 1},
+  {"id": 10, "value": "Frederick Douglass with his grandson, Joseph Douglass", "parent": 1},
+  {"id": 11, "value": "Rev. G.H.S. Bell", "parent": 1},
+  {"id": 12, "value": "Susan Bell", "parent": 1},
+  {"id": 13, "value": "Col. Charles Young as a cadet at West Point", "parent": 1},
+  {"id": 14, "value": "John R. Bell", "parent": 2},
+  {"id": 15, "value": "Thomas Mundy Peterson", "parent": 2},
+  {"id": 16, "value": "woman", "parent": 3},
+  {"id": 17, "value": "girl", "parent": 3},
+  {"id": 18, "value": "member of the Vass family", "parent": 3},
+  {"id": 19, "value": "Crozely", "parent": 5},
+  {"id": 20, "value": "Crozley", "parent": 5},
+  {"id": 21, "value": "woman", "parent": 7},
+  {"id": 22, "value": "Buffalo soldier from Co. G 25th Regiment", "parent": 7},
+  {"id": 23, "value": "newspaper carrier", "parent": 7},
+  {"id": 24, "value": "photographed by J. P. Ball & Son", "parent": 16},
+  {"id": 25, "value": "wearing a top hat and a fur stole", "parent": 16},
   ]},
 ]
  
