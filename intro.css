@@ -17,7 +17,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F1ECE5;
+    background-color: #F3EFE9;
     color: #232122;
 }
 
@@ -63,7 +63,7 @@ body, html {
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
-    color: #F1ECE5;
+    color: #F3EFE9;
     padding: 0;
     line-height: 35px;
     font-size: 16px;
@@ -80,5 +80,5 @@ body, html {
 
 .navbar-custom .nav-link:hover {
     color: #232122;
-    background-color: #F1ECE5; /* New background color on hover */
+    background-color: #F3EFE9; /* New background color on hover */
 }

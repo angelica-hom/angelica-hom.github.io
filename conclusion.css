@@ -29,7 +29,7 @@ body, html {
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
-    color: #F1ECE5;
+    color: #F3EFE9;
     padding: 0;
     line-height: 35px;
     font-size: 16px;
@@ -46,19 +46,19 @@ body, html {
 
 .navbar-custom .nav-link:hover {
     color: #232122;
-    background-color: #F1ECE5; /* New background color on hover */
+    background-color: #F3EFE9; /* New background color on hover */
 }
 
 /* Change the background-color and color for the "Characters" button */
 .btn-selected {
-    background-color: #F1ECE5 !important;
+    background-color: #F3EFE9 !important;
     color: #232133 !important;
 }
 
 /*a:focus, a:active, a:hover {*/
 /*  outline: none;*/
 /*  text-decoration: none;*/
-  /*color: #F1ECE5; /* Set the desired color for the links */
+  /*color: #F3EFE9; /* Set the desired color for the links */
 /*}*/
 
 /* Change the color of an inactive (unvisited) hyperlink */
@@ -73,7 +73,7 @@ a:hover {
 
 /* RIGHT SECTION STYLE */
 .right-section {
-    background-color: #F1ECE5;
+    background-color: #F3EFE9;
     display: flex;
     align-items: center; /* Vertically center the content */
     justify-content: center; /* Horizontally center the content */
@@ -82,7 +82,7 @@ a:hover {
 /* LEFT SECTION STYLE */
 .left-section {
     background-color: #1B3D5B;
-    color: #F1ECE5; /* Set text color to white for better contrast */
+    color: #F3EFE9; /* Set text color to white for better contrast */
     justify-content: flex-start!important;
     position: relative;
 }
@@ -136,7 +136,7 @@ a:hover {
 
 .interact {
     border: 2px solid black;
-    background-color: #F1ECE5;
+    background-color: #F3EFE9;
     color: #232122;
     padding: 10px 20px;
 }
