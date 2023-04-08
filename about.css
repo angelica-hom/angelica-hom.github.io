@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.container-fluid {
+    height: calc(100% - 35px); /* Subtract navbar height */
+    padding: 0;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1ECE5;
+    color: #232122;
+    background-image:
+        url("images/Rock Joy.gif"), /* lower left image */
+        url("images/Rock Evelyn.gif"); /* lower right image */
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: bottom left, bottom right; /* position the images */
+}
+
+.hero-container #content {
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+}
+
+.hero-container h2 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.hero-container h3 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.hero-container p {
+    font-family: 'Roboto Mono', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #232122;
+    max-width: 1163px;
+}
+
+/* NAVBAR */
+.navbar-custom {
+    margin-bottom: 0;
+    height: 35px;
+    align-items: center; /* Center the navbar content vertically */
+    background-color: #232122; /* New navbar background color */
+    width: 100%; /* Make the navbar container wider */
+    font-family: 'Roboto Mono', monospace; /* Specify the font family */
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #F1ECE5;
+    padding: 0;
+    line-height: 35px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0; /* Add a margin to create more space between nav items */
+}
+
+.navbar-custom .navbar-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between; /* Spread out the nav items */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #232122;
+    background-color: #F1ECE5; /* New background color on hover */
+}
+
+/* Change the background-color and color for the "Characters" button */
+.btn-selected {
+    background-color: #F1ECE5 !important;
+    color: #232133 !important;
+}
