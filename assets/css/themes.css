@@ -1,0 +1,30 @@
+/* Change the font of the accordion buttons */
+.accordion-button {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 14px;
+    background-color: #D9E9D8;
+}
+
+/* Change the font of the accordion content */
+.accordion-body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    color: #003D3C;
+}
+
+/* RIGHT SECTION STYLE */
+.right-section {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+/* LEFT SECTION STYLE */
+.left-section {
+    background-color: #277674;
+}
+
+/* VISUALIZATION */
+.flourish-embed-container {
+    width: 100%;
+}

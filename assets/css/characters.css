@@ -1,0 +1,18 @@
+/* RIGHT SECTION STYLE */
+.right-section {
+    background-color: #F3EFE9;
+}
+
+/* LEFT SECTION STYLE */
+.left-section {
+    background-color: #692746;
+}
+
+/* VISUALIZATION */
+#container {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

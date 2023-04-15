@@ -1,0 +1,14 @@
+/* LEFT SECTION STYLE */
+.left-section {
+    background-color: #F3EFE9;
+    color: #232122; /* Set text color to white for better contrast */
+}
+
+/* VISUALIZATION */
+.vertical-center {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

@@ -1,0 +1,35 @@
+.hero-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1ECE5;
+    color: #232122;
+    background-image:
+        url("assets/images/Rock Joy.gif"), /* lower left image */
+        url("assets/images/Rock Evelyn.gif"); /* lower right image */
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: bottom left, bottom right; /* position the images */
+}
+
+/* RIGHT SECTION STYLE */
+.right-section {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+/* LEFT SECTION STYLE */
+.left-section {
+    background-color: #1B3D5B;
+}
+
+.left-section #content {
+    padding-top: 38px;
+}
+
+/* VISUALIZATION */
+.flourish-embed-container {
+    width: 100%;
+}
