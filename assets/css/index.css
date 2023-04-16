@@ -8,12 +8,33 @@ body, html {
     font-family: 'Roboto Flex', sans-serif;
 }
 
+
+.background {
+    position: fixed;
+    background-color: #F4EFE9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* negative z-index to place behind other elements */
+}
+
+.background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .hero-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F3EFE9;
+    background-color: transparent;
     color: #232122;
 }
 
@@ -27,7 +48,6 @@ body, html {
     font-style: normal;
     font-weight: 300;
     font-size: 70px;
-    /*letter-spacing: 1.17em;*/
     color: #232122;
 }
 

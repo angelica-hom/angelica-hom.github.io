@@ -19,6 +19,10 @@
     <link href="assets/css/index.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="background">
+      <img src="assets/images/Background.svg" alt="Hotdog hands background" />
+    </div>
+
     <div
       class="container-fluid hero-container d-flex align-items-center text-center"
     >
@@ -28,7 +32,8 @@
             >EVERYTHING<br />EVERYWHERE<br />ALL AT ONCE</span
           >
         </h1>
-        <br><p>By Angelica Hom</p>
+        <br />
+        <p>By Angelica Hom</p>
         <br /><a class="navbar-brand" href="intro.html">
           Start
           <img src="assets/images/Right Arrow.png" alt="Intro" height="50" />
@@ -37,22 +42,20 @@
         <p>(Spoilers ahead!)</p>
       </div>
     </div>
-    
-    <div id="desktop-message">
-  		<p>Sorry, this website is best viewed on a desktop for a better experience.
-  		<br><br>
-  		<img src="assets/images/Bagel.png" alt="A black Everything Bagel from the film Everything Everywhere All at Once" height="100"/>
-  		</p>
-  	</div>
 
-    <script>
-      document.addEventListener("keydown", function (event) {
-        if (event.code === "ArrowRight") {
-          window.location.href = "intro.html";
-        }
-      });
-    </script>
+    <div id="desktop-message">
+      <p>
+        Sorry, this website is best viewed on a desktop for a better experience.
+        <br /><br />
+        <img
+          src="assets/images/Bagel.png"
+          alt="A black Everything Bagel from the film Everything Everywhere All at Once"
+          height="100"
+        />
+      </p>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
   </body>
 </html>
