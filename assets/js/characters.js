@@ -92,7 +92,7 @@ document.addEventListener('keydown', function (event) {
       .enabled(true)
       .fontColor('#232122')
       .fontSize('20px')
-      .fontFamily('Roboto Flex')
+      .fontFamily('Roboto Mono')
       .fontWeight('800')
       .text("Venn Diagram of the Wang Family Characters");
     
