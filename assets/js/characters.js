@@ -86,6 +86,16 @@ document.addEventListener('keydown', function (event) {
     // Disable the legend
     chart.legend(false);
 
+    // Set the chart title
+    chart
+      .title()
+      .enabled(true)
+      .fontColor('#232122')
+      .fontSize('20px')
+      .fontFamily('Roboto Flex')
+      .fontWeight('800')
+      .text("Venn Diagram of the Wang Family Characters");
+    
     // Set the container id
     chart.container('container');
 
