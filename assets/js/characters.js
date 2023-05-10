@@ -12,7 +12,7 @@ document.addEventListener('keydown', function (event) {
 
 // Create data
     var data = [
-      {x: "Evelyn", value: 12, name: "EVELYN", desc: "She is a hard-working matriarch who<br>struggles to stay on top of all aspects of her life:<br>family, business, and personal dreams. She is so<br>determined to make everything “perfect” or<br>appease others that she forgets to focus on what<br>truly matters. She is capable of changing for the<br>good of her and her family’s happiness.", img: "https://media.giphy.com/media/WiCO2uZK05Klc1d28q/giphy.gif",
+      {x: "Evelyn", value: 12, name: "EVELYN", desc: "She is a hard-working matriarch who<br>struggles to stay on top of all aspects of her life:<br>family, business, and personal dreams. She is so<br>determined to make everything “perfect” or<br>to appease others that she forgets to focus on what<br>truly matters. She is capable of changing for the<br>good of her and her family’s happiness.", img: "https://media.giphy.com/media/WiCO2uZK05Klc1d28q/giphy.gif",
        normal:   {fill: "#d900ac 0.8", stroke: "4 grey"},
        hovered:  {fill: "#d900ac 0.5", stroke: "4 white"},
        selected: {fill: "#d900ac 0.5", stroke: "4 white"}
@@ -27,7 +27,7 @@ document.addEventListener('keydown', function (event) {
        hovered:  {fill: "#009c98 0.5", stroke: "4 white"},
        selected: {fill: "#009c98 0.5", stroke: "4 white"}
       },
-      {x: "Gong Gong", value: 6, name: "GONG GONG", desc: "He sees the world strictly as black<br>-and-white or right-and-wrong. It's hard for him<br>to accept those who fall in the grey area. He<br>doesn't shy away from extreme situations<br>whether it's abandoning his daughter or saving <br>is family from being sucked into the bagel.", img: "https://m.media-amazon.com/images/M/MV5BYWVkNGFkYzQtZTJiZi00Y2Q0LTg5YmYtY2IzYjQ4OTJlY2NiXkEyXkFqcGdeQXVyMTIwODk1NTQ@._V1_.jpg",
+      {x: "Gong Gong", value: 6, name: "GONG GONG", desc: "He sees the world strictly as black<br>-and-white or right-and-wrong. It's hard for him<br>to accept those who fall in the grey area. He<br>doesn't shy away from extreme situations<br>whether it's abandoning his daughter or saving <br>his family from being sucked into the bagel.", img: "https://m.media-amazon.com/images/M/MV5BYWVkNGFkYzQtZTJiZi00Y2Q0LTg5YmYtY2IzYjQ4OTJlY2NiXkEyXkFqcGdeQXVyMTIwODk1NTQ@._V1_.jpg",
        normal:	 {fill: "#7452aa 0.8", stroke: "4 grey"},
        hovered:  {fill: "#7452aa 0.5", stroke: "4 white"},
        selected: {fill: "#7452aa 0.5", stroke: "4 white"}
