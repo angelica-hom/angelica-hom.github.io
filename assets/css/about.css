@@ -94,6 +94,16 @@ body, html {
     background-color: #F1ECE5; /* New background color on hover */
 }
 
+/* Change the color of an inactive (unvisited) hyperlink */
+a {
+    color: #08BDBD; /* Replace with your desired color */
+}
+
+/* Change the color of a hyperlink when hovered over */
+a:hover {
+    color: #5A9; /* Replace with your desired color */
+}
+
 /* Change the background-color and color for the "Characters" button */
 .btn-selected {
     background-color: #F1ECE5 !important;
