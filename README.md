@@ -37,6 +37,7 @@ A lot of thought and background research through numerous interviews and article
 
 ### Design Development
 With the data collection complete, I used [RAWGraphs](https://www.rawgraphs.io/) to see quick visualizations of the data and to test different visualization types.
+
 ![arc](https://github.com/angelica-hom/angelica-hom.github.io/assets/90013439/10cd6bf1-4acd-4004-953c-ddcdde923dbe) ![line](https://github.com/angelica-hom/angelica-hom.github.io/assets/90013439/afb96fe4-1da8-4d08-ba2d-5d109b9b0a10)
 ![beeswarm](https://github.com/angelica-hom/angelica-hom.github.io/assets/90013439/38e903ce-1cf6-4a0f-b3b0-788596041a91) ![gantt](https://github.com/angelica-hom/angelica-hom.github.io/assets/90013439/7afc4153-f7fb-4834-9815-868a06f71b6b)
 
